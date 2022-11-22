@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./images/photos/hero_img.png" />
+    <link rel="stylesheet" href="./css/all.css" type="text/css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" type="text/css" />
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>AESTHETICS-catalog</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="layout header__layout">
+          <div class="header__logo logo">
+            <a href="./index.html">
+              <img src="./images/icon/logo.png" alt="logo" width="246" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./catalog.html">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#"> Доставка та оплата</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Блог</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__icons">
+            <ul class="header__icons-list">
+              <li class="header__icons-item">
+                <a class="header__icons-link" href="#">
+                  <img
+                    class="header__icons-icon"
+                    src="./images/icon/icon_cabinet.png"
+                    alt="my cabinet"
+                  />
+                </a>
+              </li>
+              <li class="header__icons-item">
+                <a class="header__icons-link" href="#">
+                  <img
+                    class="header__icons-icon"
+                    src="./images/icon/icon_basket.png"
+                    alt="my basket"
+                  />
+                </a>
+              </li>
+              <li class="header__icons-item">
+                <a class="header__icons-link" href="#">
+                  <img
+                    class="header__icons-icon"
+                    src="./images/icon/icon_favorite.png"
+                    alt="favorte"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <h1 class="title-hidden">AESTHETICS</h1>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="catalog__layout layout">
+          <div class="catalog__content">
+            <div class="catalog__content-wrapper">
+              <ul class="catalog__filter-list">
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Група товару</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <ul class="catalog__filtered-list">
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="wash-gel">
+                        <input
+                          class="catalog__checkbox"
+                          type="checkbox"
+                          name="wash-gel"
+                          id="wash-gel"
+                        />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Гель для вмивання</span>
+                      </label>
+                    </li>
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="face-cream">
+                        <input
+                          class="catalog__checkbox"
+                          type="checkbox"
+                          name="face-cream"
+                          id="face-cream"
+                        />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Крем для обличчя</span>
+                      </label>
+                    </li>
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="face-mask">
+                        <input
+                          class="catalog__checkbox"
+                          type="checkbox"
+                          name="face-mask"
+                          id="face-mask"
+                        />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Маска для обличчя</span>
+                      </label>
+                    </li>
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="foam">
+                        <input class="catalog__checkbox" type="checkbox" name="foam" id="foam" />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Пінка для вмивання</span>
+                      </label>
+                    </li>
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="serum-for-face">
+                        <input
+                          class="catalog__checkbox"
+                          type="checkbox"
+                          name="serum-for-face"
+                          id="serum-for-face"
+                        />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Сироватка для обличчя</span>
+                      </label>
+                    </li>
+                    <li class="catalog__filtered-item">
+                      <label class="catalog__filtered-label" for="tonic">
+                        <input class="catalog__checkbox" type="checkbox" name="tonic" id="tonic" />
+                        <span class="catalog__custom-icon"></span>
+                        <span class="catalog__filtered-span">Тонік для обличчя</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Вік</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Призначення</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Час застосування</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Ступінь захисту</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Тип шкіри</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog__filter-item">
+                  <div class="catalog__filter-container">
+                    <a href="#" class="catalog__filter-item-title">Ціна</a>
+                    <a href="#">
+                      <svg class="catalog__filter-plus" width="11" height="11">
+                        <use href="./images/icon/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="catalog__filter-input-wrapper">
+                    <input
+                      class="catalog__filter-input-item"
+                      type="text"
+                      name="from"
+                      id="from"
+                      placeholder="від"
+                    />
+                    <span class="catalog__filter-input-span"></span>
+                    <input
+                      class="catalog__filter-input-item"
+                      type="text"
+                      name="to"
+                      id="to"
+                      placeholder="до"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="catalog__list-wrapper">
+                <div class="catalog__list-sort-title">
+                  <a href="#" class="catalog__list-sort-link">Сортування</a>
+                </div>
+                <ul class="catalog__list">
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_1.png"
+                      alt="Facial fluid for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Флюїд для обличчя для сухої шкіри</p>
+                    <span class="catalog__span">630 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_2.png"
+                      alt="Facial fluid for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Флюїд для обличчя для сухої шкіри</p>
+                    <span class="catalog__span">630 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_3.png"
+                      alt="Facial fluid for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                      />
+                    </a>
+                    <p class="catalog__text">Флюїд для обличчя для сухої шкіри</p>
+                    <span class="catalog__span">630 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_4.png"
+                      alt="Moisturizing serum for normal skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Зволожуюча сироватка для нормальної шкіри</p>
+                    <span class="catalog__span">480 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_5.png"
+                      alt="Moisturizing cream for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Зволожуючий крем для сухої шкіри</p>
+                    <span class="catalog__span">830 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_6.png"
+                      alt="Facial toner for normal skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Тонік для обличчя для нормальної шкіри</p>
+                    <span class="catalog__span">450 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_7.png"
+                      alt="Facial fluid for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="Facial cleansing foam"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Пінка для очищення шкіри обличчя</p>
+                    <span class="catalog__span">560 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_8.png"
+                      alt="Day and night cream set"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Набір Денний та нічний крем</p>
+                    <span class="catalog__span">1230 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_9.png"
+                      alt="Mattifying day cream for women's skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Матуючий денний крем для жиної шкіри</p>
+                    <span class="catalog__span">680 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_10.png"
+                      alt="Night antiaging cream for dry skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Нічний антивіковий крем для сухої шкіри</p>
+                    <span class="catalog__span">860 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_11.png"
+                      alt="Make-up remover gel"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Гель для зняття макіяжу</p>
+                    <span class="catalog__span">730 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_12.png"
+                      alt="Anti-age serum for the area around the eyes"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Антивікова сироватка для зони навколо очей</p>
+                    <span class="catalog__span">900 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_13.png"
+                      alt="Lotion for normal and combination skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Лосьон для нормальної та комбінованої шкіри</p>
+                    <span class="catalog__span">1050 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_14.png"
+                      alt="Scrub for sensitive skin"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Скраб для чутливої шкіри</p>
+                    <span class="catalog__span">890 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                  <li class="catalog__list-item">
+                    <img
+                      src="./images/photos/catalogue_15.png"
+                      alt="Gel for deep cleansing of the skin of the face"
+                      class="catalog__img"
+                      width="234"
+                    />
+                    <a href="#" class="catalog__link-fav">
+                      <img
+                        src="./images/icon/fav_empty.png"
+                        alt="favorite icon"
+                        class="catalog__fav-icon"
+                        width="35"
+                    /></a>
+                    <p class="catalog__text">Гель для глубокого очищення шкіри обличчя</p>
+                    <span class="catalog__span">890 грн</span>
+                    <div class="catalog__link-container">
+                      <a class="catalog__link-more" href="#">Детальніше</a>
+                      <a class="catalog__btn" href="#">В кошик</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="viewed__layout layout">
+          <div class="viewed__wrapper">
+            <h3 class="viewed__title">Ви нещодавно переглядали:</h3>
+            <ul class="viewed__list">
+              <li class="viewed__item">
+                <a href="#" class="viewed__link">
+                  <img
+                    class="viewed__img"
+                    src="./images/photos/viewed_1.png"
+                    alt="active serum around the eyes"
+                    width="234"
+                  />
+
+                  <p class="viewed__text catalog__text">
+                    Антивікова сироватка для зони навколо очей
+                  </p>
+                  <span class="viewed__span catalog__span">900 грн</span>
+                </a>
+              </li>
+              <li class="viewed__item">
+                <a href="#" class="viewed__link"
+                  ><img
+                    class="viewed__img"
+                    src="./images/photos/viewed_2.png"
+                    alt="removal makeup gel"
+                    width="234"
+                  />
+
+                  <p class="viewed__text catalog__text">Гель для зняття макіяжу</p>
+                  <span class="viewed__span catalog__span">730 грн</span>
+                </a>
+              </li>
+              <li class="viewed__item">
+                <a href="#" class="viewed__link"
+                  ><img
+                    class="viewed__img"
+                    src="./images/photos/viewed_3.png"
+                    alt="micellar tonic for normal skin"
+                    width="234"
+                  />
+
+                  <p class="viewed__text catalog__text">Міцелярний тонік для нормальної шкіри</p>
+                  <span class="viewed__span catalog__span">780 грн</span>
+                </a>
+              </li>
+              <li class="viewed__item">
+                <a href="#" class="viewed__link"
+                  ><img
+                    class="viewed__img"
+                    src="./images/photos/viewed_4.png"
+                    alt="facial cleansing foam"
+                    width="234"
+                  />
+
+                  <p class="viewed__text catalog__text">Пінка для очищення шкіри обличчя</p>
+                  <span class="viewed__span catalog__span">560 грн</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <a href="#" class="arrow-fixed"
+          ><img
+            class="arrow-fixed__img"
+            width="50"
+            height="50"
+            src="./images/icon/arrow.png"
+            alt="arrow scroll"
+        /></a>
+      </main>
+      <footer class="footer">
+        <div class="footer__layout">
+          <div class="footer__up-icons layout">
+            <ul class="footer__nav-list up-icons__list">
+              <li class="footer__nav-item">
+                <img src="./images/icon/footer-instagram.png" alt="instagram icon" />
+              </li>
+              <li class="footer__nav-item">
+                <img src="./images/icon/footer-email.png" alt="email icon" />
+              </li>
+              <li class="footer__nav-item">
+                <img src="./images/icon/footer-phone.png" alt="phone icon" />
+              </li>
+              <li class="footer__nav-item">
+                <img src="./images/icon/footer-address.png" alt="location icon" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__container layout">
+              <div class="footer__logo logo">
+                <a href="#">
+                  <img src="./images/icon/main-footer-logo.png" alt="logo" width="246" />
+                </a>
+              </div>
+              <div class="footer__wrapper footer__nav-container">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./catalog.html">Каталог</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#"> Доставка та оплата </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Блог</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__wrapper footer__hour-container">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">Режим роботи</li>
+                  <li class="footer__nav-item">Понеділок - Субота</li>
+                  <li class="footer__nav-item">З 9:00 до 21:00</li>
+                </ul>
+              </div>
+              <div class="footer__wrapper">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Політика конфіденційності</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="tel:+380635542221">+38 (063) 554 22 21</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="tel:+380956789900">+38 (095) 678 99 00</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__wrapper pay-icons__wrapper">
+                <ul class="footer__nav-list pay-icons__list">
+                  <li class="footer__nav-item">
+                    <img src="./images/icon/mastercard_footer.png" alt="mastercard" />
+                  </li>
+                  <li class="footer__nav-item">
+                    <img src="./images/icon/visa_footer.png" alt="visa" />
+                  </li>
+                  <li class="footer__nav-item">
+                    <img src="./images/icon/applepay_footer.png" alt="apple pay" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
