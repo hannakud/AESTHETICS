@@ -536,7 +536,7 @@ body {
 
 .face-care__subtitle {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.22;
   margin-bottom: 12px;
 }
@@ -794,7 +794,7 @@ body {
 
 .catalog__filter-item-title {
   color: var(--main-font-color);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 26px;
   line-height: 1.23;
   position: relative;
