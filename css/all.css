@@ -795,8 +795,21 @@ body {
   gap: 8px;
 }
 .catalog__list-item {
-  padding: 13px 13px 13px 11px;
+  padding: 13px 13px 9px 13px;
+  box-sizing: border-box;
 }
+
+.catalog__img {
+  width: 100%;
+  height: auto;
+}
+
+.catalog__list-item:hover {
+  outline: 1px solid var(--main-font-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 /* left-filter */
 .catalog__filter-list {
   display: flex;
@@ -898,6 +911,8 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  overflow: hidden;
+  padding: 2px;
 }
 
 .catalog__list-item {
