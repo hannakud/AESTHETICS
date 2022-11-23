@@ -278,7 +278,7 @@ body {
   gap: 20px;
 }
 .header__icons-item {
-  transition: background-image 100ms var(--transition);
+  transition: background-image 250ms var(--transition);
 }
 
 .header__icons-link {
@@ -647,6 +647,7 @@ body {
   display: block;
   width: 50px;
   height: 50px;
+  transition: background-image 250ms var(--transition);
 }
 
 .social__item:nth-child(1) {
@@ -764,6 +765,9 @@ body {
 .catalog__content {
   display: flex;
 }
+.catalog__layout {
+  padding-bottom: 110px;
+}
 .catalog__list-wrapper {
   display: flex;
   flex-direction: column;
@@ -804,10 +808,12 @@ body {
   height: auto;
 }
 
-.catalog__list-item:hover {
+.catalog__list-item:hover,
+.catalog__list-item:focus,
+.viewed__item:hover,
+.viewed__item:focus {
   outline: 1px solid var(--main-font-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
 }
 
 /* left-filter */
@@ -906,6 +912,7 @@ body {
   background-color: var(--main-font-color);
 }
 /* main catalog of products */
+
 .catalog__list {
   display: flex;
   justify-content: center;
@@ -930,10 +937,26 @@ body {
   background-position: center;
   width: 36px;
   height: 36px;
+  transition: background-image 250ms var(--transition);
 }
 
-.catalog__name-link {
-  font-weight: 600;
+.catalog__link-fav:hover {
+  background-image: url(../images/icon/heart_hover_favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.catalog__link-fav:active {
+  background-image: url(../images/icon/heart_active_favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.catalog__name-link,
+.viewed__name-link {
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: var(--main-font-color);
@@ -941,11 +964,13 @@ body {
   display: block;
 }
 
-.catalog__span {
+.catalog__span,
+.viewed__span {
   display: block;
   text-align: end;
   padding-right: 13px;
   padding-bottom: 13px;
+  color: var(--main-font-color);
 }
 
 .catalog__link-container {
@@ -990,10 +1015,9 @@ body {
   right: -5%;
   box-sizing: border-box;
 }
-/* viewed */
+
 .viewed__layout {
-  margin-bottom: 85px;
-  margin-top: 95px;
+  padding-bottom: 87px;
 }
 .viewed__wrapper {
   margin: 0 auto;
@@ -1012,27 +1036,32 @@ body {
   align-items: center;
 }
 .viewed__item {
-  max-width: 260px;
-  height: 434px;
+  width: 260px;
+  height: 400px;
+  position: relative;
 }
-.viewed__link {
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color: var(--main-font-color);
-}
+/* .viewed__link-fav {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  background-image: url(../images/icon/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+} */
 .viewed__img {
   display: block;
   width: 100%;
   height: auto;
   padding: 13px;
 }
-.viewed__text {
+.viewed__name-link {
   padding-right: 48px;
+  display: block;
 }
 
+/* gratitude */
 .gratitude__section {
   height: 642px;
   background-image: url(../images/photos/tnanks.png);
