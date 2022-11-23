@@ -284,6 +284,7 @@ body {
 .header__icons-link {
   width: 40px;
   height: 40px;
+  display: block;
 }
 .header__icons-item:nth-child(1) {
   background-image: url(../images/icon/cabinet.svg);
