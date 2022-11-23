@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/all.css" type="text/css" />
     <link rel="stylesheet" href="./css/fonts.css" type="text/css" />
     <script type="text/javascript" src="./js/main.js"></script>
-    <title>My order</title>
+    <title>Product</title>
   </head>
   <body>
     <header class="header">
@@ -75,7 +75,75 @@
         </div>
       </div>
     </header>
-    <main class="layout"></main>
+    <main>
+      <section class="product layout">
+        <div class="product__arrow-back">
+          <a href="./catalog.html" class="product__arrow-link">
+            <svg class="product__arrow-left" width="32" height="32">
+              <use href="./images/icon/sprite.svg#icon-arrow_left"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="product-info product__details">
+          <img
+            src="./images/photos/product_info.png"
+            alt="cream for face"
+            class="product-info__img"
+          />
+          <div class="product-info__container">
+            <h3 class="product-info__title">Антиоксидантний крем для обличчя</h3>
+            <div class="product-info__rate"></div>
+            <p class="product-info__text">
+              При регулярному використанні колір обличчя стане більш рівномірним, а почервоніння і
+              сухість менш вираженими. Крем попереджає появу зморшок, зневоднення і стоншування
+              шкіри за допомогою потужних антиоксидантів з екстракту швейцарської сосни й чаю матча.
+              Велика кількість протизапальних і протиалергійних компонентів допомагає позбутися
+              подразнень і гіперчутливості.
+            </p>
+            <div class="product-info__price-container">
+              <span class="product-info__price-amount">850 грн</span>
+              <a href="#" class="product-info__price-fav"></a>
+            </div>
+            <div class="product-info__order-container">
+              <input type="number" value="1" />
+              <a href="" class="product-info__btn button">В кошик</a>
+            </div>
+          </div>
+        </div>
+        <ul class="description-tabs product__tabs">
+          <li class="description-tabs__item description-tabs__item--active">
+            <a href="#" class="description-tabs__btn">Склад</a>
+          </li>
+          <li class="description-tabs__item">
+            <a href="#" class="description-tabs__btn">Відгуки</a>
+          </li>
+        </ul>
+        <div class="ingredients product__extended-info">
+          <p class="ingredients__text">
+            Aqua (вода), Grape Seed (Vitis Vinifera) Oil (олія виноградної кісточки), Triolein,
+            Glyceryl Dioleate, Polyglyceryl-3 Cetyl Ether (емульгатор з оливкової олії),
+            Butyrospermum Parkii (Shea) Butter (баттер ши (каріте)), Cetearyl Alcohol
+            (цетилстеариловий спирт), Complex of phytoе strogens: Glycine Soja Extract, Trifolium
+            Pratense Extract, Tamarindus Indica Fruit Extract, Medicago Sativa Extract, Glycyrrhiza
+            glabra Root Extract, Vitis Vinifera Leaf Extract, Humulus Lupulus Cone Extract (комплекс
+            фітоестрогенів: екстракти сої, конюшини, фініка, люцерни, солодки, червоного винограду,
+            хмелю), Optiphen BD* (харчовий консервант), Limnanthes Alba (Meadowfoam) Seed Oil (олія
+            пінника), Сhaulmoogra (Hydnocarpus laurifolia) Seed Oil (чаульмугри олія), Carapa
+            Guianensis Seed Oil (олія андироби), Pinus Sylvestris Bark Extract (екстракт
+            швейцарської кам’яної сосни), Lactose, Milk Protein (молочні поліпептиди), Vitamin E
+            (Вітамін Е), Blend of Essential Oils: Ylang Ylang (Cananga odorata) Flower Oil, Neroli
+            (Citrus aurantium var. amara) Essential Oil, Patchouli (Pogostemon Cablin Blanco)
+            Essential Oil, Cinnamon Bark (Cinnamomum verum) Essential Oil, Grapefruite (Citrus
+            paradisi) Essential Oil, European mandarin (Citrus mandurensis) Essential Oil, Citrus
+            Aurantium Dulcis Peel Extract, Rosa centifolia Flower Extract (композиція натуральних
+            ефірних олій: іланг – ілангу, неролі, пачулі, кориці, грейпфрута, мандарина, апельсина,
+            абсолют троянди), Camellia Sinensis Leaf Extract (екстракт чаю матча), Beta Glucan
+            (бета-глюкан), (Coenzyme Q10) Ubiquinone (Коензим Q10). *Сертифікат Ecocert.
+          </p>
+        </div>
+      </section>
+      <section class="similar layout"></section>
+    </main>
     <footer class="footer">
       <div class="footer__layout">
         <div class="footer__social layout">

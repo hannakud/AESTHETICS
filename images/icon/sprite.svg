@@ -76,5 +76,8 @@
 <symbol id="icon-expand" viewBox="0 0 69 32">
 <path fill="none" stroke="#484847" style="stroke: var(--color1, #484847)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.3333" d="M5.333 5.333l29.333 21.333 29.333-21.333"></path>
 </symbol>
+<symbol id="icon-arrow_left" viewBox="0 0 32 32">
+<path fill="#4b6049" style="fill: var(--color1, #4b6049)" d="M31.083 15h-26.078l6-6-1.414-1.414-8.414 8.414 8.414 8.414 1.414-1.414-6-6h26.078v-2z"></path>
+</symbol>
 </defs>
 </svg>
