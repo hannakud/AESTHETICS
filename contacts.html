@@ -9,11 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <link rel="stylesheet" href="./css/contacts.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./images/photos/hero_img.png" />
-    <link rel="stylesheet" href="./css/all.css" type="text/css" />
-    <link rel="stylesheet" href="./css/fonts.css" type="text/css" />
     <script type="text/javascript" src="./js/main.js"></script>
-    <title>AESTHETICS</title>
+    <title>Contacts</title>
   </head>
   <body>
     <header class="header">
@@ -31,13 +31,13 @@
               <a class="header__nav-link" href="./catalog.html">Каталог</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="./delivery_payment.html">Доставка та оплата</a>
+              <a class="header__nav-link" href="./delivery.html">Доставка та оплата</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="./blog.html">Блог</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Контакти</a>
+              <a class="header__nav-link" href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -75,7 +75,46 @@
         </div>
       </div>
     </header>
-    <main class="layout"></main>
+    <main>
+      <section class="contacts layout">
+        <div class="contacts__container">
+          <div class="contacts__list-wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">Режим роботи:</li>
+              <li class="contacts__item">Понеділок - Субота</li>
+              <li class="contacts__item">З 9:00 до 21:00</li>
+              <li class="contacts__item">
+                <a class="contacts__item-tel" href="tel:+380635542221">+38 (063) 554 22 21</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__item-tel" href="tel:++380956789900">+38 (095) 678 99 00 </a>
+              </li>
+            </ul>
+            <form class="contacts__form">
+              <div class="contacts__input-wrapper">
+                <input
+                  class="contacts__form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше им’я"
+                  id="name"
+                  required="required"
+                />
+                <input
+                  class="contacts__form-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required="required"
+                  placeholder="Номер телефону"
+                />
+              </div>
+              <a href="./callback.html" class="contacts__form-btn button">Передзвоніть</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__layout">
         <div class="footer__social layout">
@@ -124,15 +163,13 @@
                   <a class="footer__nav-link" href="./catalog.html">Каталог</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="./delivery_payment.html">
-                    Доставка та оплата
-                  </a>
+                  <a class="footer__nav-link" href="./delivery.html"> Доставка та оплата </a>
                 </li>
                 <li class="footer__nav-item">
                   <a class="footer__nav-link" href="./blog.html">Блог</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Контакти</a>
+                  <a class="footer__nav-link" href="./contacts.html">Контакти</a>
                 </li>
               </ul>
             </div>
