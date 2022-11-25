@@ -57,6 +57,7 @@
 }
 
 .first-view__catalog-btn {
+  padding: 10px 64px;
   position: absolute;
   bottom: 20%;
 }
@@ -140,6 +141,7 @@
 
 .face-care__catalog-btn {
   position: relative;
+  padding: 10px 64px;
 }
 
 .face-care__catalog-btn::after {

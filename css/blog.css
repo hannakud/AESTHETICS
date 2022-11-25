@@ -1,0 +1,6 @@
+.blog__arrow-back {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-bottom: 18px;
+}

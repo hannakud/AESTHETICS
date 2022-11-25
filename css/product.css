@@ -85,6 +85,10 @@
   font-size: 26px;
   line-height: 1.23;
 }
+.product-info__btn {
+  padding: 10px 62px;
+}
+
 .product-info__price-fav {
   background-image: url(../images/icon/heart.svg);
   background-repeat: no-repeat;
@@ -117,4 +121,63 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.viewed__layout {
+  padding-bottom: 87px;
+  overflow: visible;
+}
+
+.viewed__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.23;
+  color: var(--main-font-color);
+  margin-bottom: 43px;
+}
+.viewed__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.viewed__list--recommended {
+  gap: 70px;
+  padding: 0 77px;
+}
+.viewed__item {
+  width: 260px;
+  height: 400px;
+  position: relative;
+  padding: 13px 13px 9px 13px;
+  border: 1px solid transparent;
+}
+.viewed__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 13px;
+}
+.viewed__name-link {
+  padding-right: 48px;
+  display: block;
+}
+
+.viewed__span {
+  display: block;
+  text-align: end;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  color: var(--main-font-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.viewed__name-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-font-color);
+  min-height: 60px;
+  display: block;
 }
