@@ -66,12 +66,14 @@
   content: '';
   display: block;
   position: absolute;
+  border: 2px solid var(--accent-color);
   width: 219px;
   height: 59px;
-  border: 2px solid var(--accent-color);
   top: -15%;
   right: -4%;
   box-sizing: border-box;
+}
+.first-view__catalog-btn:hover {
 }
 
 /* new */

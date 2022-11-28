@@ -90,6 +90,8 @@
 }
 
 .contacts__form-btn {
+  font-family: inherit;
   padding: 10px 32px;
   align-self: end;
+  border-style: none;
 }
