@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./css/common.css" type="text/css" />
     <link rel="stylesheet" href="./css/product.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./images/photos/hero_img.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Product</title>
   </head>
@@ -111,14 +116,17 @@
           </div>
         </div>
         <ul class="description-tabs product__tabs">
-          <li class="description-tabs__item description-tabs__item--active">
+          <li id="ingredients-tab" class="description-tabs__item description-tabs__item--active">
             <a href="#" class="description-tabs__btn">Склад</a>
           </li>
-          <li class="description-tabs__item">
+          <li id="feedbacks-tab" class="description-tabs__item">
             <a href="#" class="description-tabs__btn">Відгуки</a>
           </li>
         </ul>
-        <div class="ingredients product__extended-info">
+        <div
+          id="ingredients-content"
+          class="ingredients product__extended-info product__extended-info--active"
+        >
           <p class="ingredients__text">
             Aqua (вода), Grape Seed (Vitis Vinifera) Oil (олія виноградної кісточки), Triolein,
             Glyceryl Dioleate, Polyglyceryl-3 Cetyl Ether (емульгатор з оливкової олії),
@@ -141,6 +149,43 @@
             (бета-глюкан), (Coenzyme Q10) Ubiquinone (Коензим Q10). *Сертифікат Ecocert.
           </p>
         </div>
+        <div id="feedbacks-content" class="feedbacks product__extended-info">
+          <a href="#" class="feedebacks__btn-add button__more">Залишити відгук</a>
+          <div class="feedbacks__all">
+            <div class="feedbacks__all-list">
+              <div class="feedbacks__name">
+                <p class="feedbacks__name-title">Катерина</p>
+                <p class="feedbacks__name-date">5.08.2022</p>
+              </div>
+              <div class="feedbacks__stars feedbacks__stars-five"></div>
+              <div class="feedbacks__rate">
+                Цей крем замовляю вдруге, дуже задоволена. Дякую за швидку доставку!
+              </div>
+            </div>
+            <div class="feedbacks__all-list">
+              <div class="feedbacks__name">
+                <p class="feedbacks__name-title">Поліна</p>
+                <p class="feedbacks__name-date">3.08.2022</p>
+              </div>
+              <div class="feedbacks__stars feedbacks__stars-four"></div>
+              <div class="feedbacks__rate">
+                Товар дуже якісний, крем не залишає липку плівку. Дякую!
+              </div>
+            </div>
+            <div class="feedbacks__all-list">
+              <div class="feedbacks__name">
+                <p class="feedbacks__name-title">Олена</p>
+                <p class="feedbacks__name-date">28.07.2022</p>
+              </div>
+              <div class="feedbacks__stars feedbacks__stars-five"></div>
+              <div class="feedbacks__rate">
+                Почитала відгуки і вирішила спробувати цей засіб. Я дуже вдячна магазину за такий
+                якісний продукт!
+              </div>
+            </div>
+          </div>
+          <a href="#" class="feedebacks__btn-more button__more button__more--bottom">Показати ще</a>
+        </div>
       </section>
       <section class="viewed__layout layout">
         <div class="viewed__wrapper">
@@ -155,8 +200,14 @@
                   width="234"
                 />
                 <a href="#" class="viewed__link-fav"></a>
-                <a href="#" class="viewed__name-link"> Матуючий денний крем для жирної шкіри</a>
-                <span class="viewed__span">680 грн</span>
+                <div class="viewed__description">
+                  <a href="#" class="viewed__name-link">Матуючий денний крем для жирної шкіри</a>
+                  <span class="viewed__span">680 грн</span>
+                </div>
+                <div class="viewed__link-container">
+                  <a class="viewed__link-more" href="#">Детальніше</a>
+                  <a class="viewed__btn" href="#">В кошик</a>
+                </div>
               </a>
             </li>
             <li class="viewed__item">
@@ -168,21 +219,34 @@
                   width="234"
                 />
                 <a href="#" class="viewed__link-fav"></a>
-                <a href="#" class="viewed__name-link">Зволожуючий крем для сухої шкіри</a>
-                <span class="viewed__span">830 грн</span>
+                <div class="viewed__description">
+                  <a href="#" class="viewed__name-link">Зволожуючий крем для сухої шкіри</a>
+                  <span class="viewed__span">830 грн</span>
+                </div>
+
+                <div class="viewed__link-container">
+                  <a class="viewed__link-more" href="#">Детальніше</a>
+                  <a class="viewed__btn" href="#">В кошик</a>
+                </div>
               </a>
             </li>
             <li class="viewed__item">
-              <a href="#" class="viewed__link"
-                ><img
+              <a href="#" class="viewed__link">
+                <img
                   class="viewed__img"
                   src="./images/photos/catalogue_10.png"
                   alt="Night antiaging cream for dry skin"
                   width="234"
                 />
                 <a href="#" class="viewed__link-fav"></a>
-                <a href="#" class="viewed__name-link">Нічний антивіковий крем для сухої шкіри</a>
-                <span class="viewed__span">860 грн</span>
+                <div class="viewed__description">
+                  <a href="#" class="viewed__name-link">Нічний антивіковий крем для сухої шкіри</a>
+                  <span class="viewed__span">860 грн</span>
+                </div>
+                <div class="viewed__link-container">
+                  <a class="viewed__link-more" href="#">Детальніше</a>
+                  <a class="viewed__btn" href="#">В кошик</a>
+                </div>
               </a>
             </li>
           </ul>

@@ -18,7 +18,7 @@
   gap: 28px;
   flex-direction: column;
   height: 470px;
-  width: 100%;
+  width: 928px;
 }
 .cabinet__list {
   display: flex;
@@ -31,9 +31,11 @@
   font-size: 26px;
   line-height: 1.23;
 }
-/* .cabinet__form-wrapper {
-  padding: ;
-} */
+.cabinet__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
 .cabinet__form {
   display: flex;
   justify-content: space-between;
@@ -44,8 +46,6 @@
   flex-direction: column;
   gap: 30px;
   width: 368px;
-}
-.cabinet__form-item {
 }
 
 .cabinet__form-label {
