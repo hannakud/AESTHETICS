@@ -37,7 +37,7 @@
               <a class="header__nav-link" href="./blog.html">Блог</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Контакти</a>
+              <a class="header__nav-link" href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +48,7 @@
                 class="header__icons-link"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                href="#"
+                href="./cabinet.html"
               >
               </a>
             </li>
@@ -75,7 +75,97 @@
         </div>
       </div>
     </header>
-    <main class="layout"></main>
+    <main>
+      <section class="cabinet layout">
+        <div class="cabinet__container">
+          <h2 class="cabnet__title">Особистий кабінет</h2>
+          <div class="cabinet__content">
+            <ul class="cabinet__list">
+              <li class="cabinet-item">
+                <a href="#" class="cabinet__link">Контактна інформація</a>
+              </li>
+              <li class="cabinet-item">
+                <a href="#" class="cabinet__link">Адресна книга</a>
+              </li>
+              <li class="cabinet-item">
+                <a href="#" class="cabinet__link">Список бажань</a>
+              </li>
+              <li class="cabinet-item">
+                <a href="#" class="cabinet__link">Історія замовлень</a>
+              </li>
+            </ul>
+            <div class="cabinet__form-wrapper">
+              <form class="cabinet__form" autocomplete="on">
+                <div class="cabinet__form-container">
+                  <div class="cabinet__form-item">
+                    <label class="cabinet__form-label" for="name">Ваше ім'я</label>
+                    <input
+                      class="cabinet__form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Світлана"
+                      required="required"
+                    />
+                  </div>
+                  <div class="cabinet__form-item">
+                    <label class="cabinet__form-label" for="lastname">Ваше прізвище</label>
+                    <input
+                      class="cabinet__form-input"
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      placeholder="Шевченко"
+                      required="required"
+                    />
+                  </div>
+                  <div class="cabinet__form-item">
+                    <label class="cabinet__form-label" for="email">E-mail</label>
+                    <input
+                      class="cabinet__form-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="shevSv002@gmail.com"
+                      required="required"
+                    />
+                  </div>
+                </div>
+                <div class="cabinet__form-container">
+                  <div class="cabinet__form-item">
+                    <label class="cabinet__form-label" for="tel">Номер телефону </label>
+                    <input
+                      class="cabinet__form-input"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="+38 068 564 77 99"
+                      required="required"
+                    />
+                  </div>
+                  <div class="cabinet__form-item">
+                    <label class="cabinet__form-label" for="date">Дата народження </label>
+                    <input
+                      class="cabinet__form-input"
+                      type="date"
+                      name="date"
+                      id="date"
+                      placeholder="8.10.1989"
+                      required="required"
+                    />
+                  </div>
+                  <div class="cabinet__form-item cabinet__form-item--last">
+                    <a href="#" class="cabinet__form-btn button__more button__more--right"
+                      >Вийти
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__layout">
         <div class="footer__social layout">

@@ -1,0 +1,73 @@
+.cabinet__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 56px 0 10px 0;
+  min-height: 607px;
+  width: 100%;
+}
+.cabnet__title {
+  color: var(--main-font-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.23;
+}
+.cabinet__content {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  height: 470px;
+  width: 100%;
+}
+.cabinet__list {
+  display: flex;
+  gap: 43px;
+}
+
+.cabinet__link {
+  color: var(--main-font-color);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.23;
+}
+/* .cabinet__form-wrapper {
+  padding: ;
+} */
+.cabinet__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 192px;
+}
+.cabinet__form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 368px;
+}
+.cabinet__form-item {
+}
+
+.cabinet__form-label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.cabinet__form-input {
+  font-family: 'Candara';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-font-color);
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+.cabinet__form-item--last {
+  margin-top: 30px;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}

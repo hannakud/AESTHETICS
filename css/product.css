@@ -137,12 +137,13 @@
 }
 .viewed__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 11px;
 }
 .viewed__list--recommended {
   gap: 70px;
   padding: 0 77px;
+  flex-wrap: nowrap;
 }
 .viewed__item {
   width: 260px;
