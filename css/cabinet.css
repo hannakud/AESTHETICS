@@ -17,7 +17,7 @@
   display: flex;
   gap: 28px;
   flex-direction: column;
-  height: 470px;
+  min-height: 470px;
   width: 928px;
 }
 .cabinet__list {
@@ -70,4 +70,31 @@
 }
 input[type='date']::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+.cabinet__form-btn {
+  padding: 13px 73px;
+}
+
+.cabinet__save-btn {
+  position: relative;
+  padding: 10px 57px;
+}
+
+.cabinet__save-btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 59px;
+  border: 2px solid var(--accent-color);
+  top: -15%;
+  right: -4%;
+  box-sizing: border-box;
+  transition: all 500ms var(--transition);
+}
+
+.cabinet__save-btn:hover::after {
+  top: 0;
+  right: 0;
 }

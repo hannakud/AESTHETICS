@@ -239,17 +239,28 @@
   padding: 2px 16px;
 }
 
-/* .catalog__btn::after {
+.catalog__btn::after,
+.viewed__btn::after {
   content: '';
   display: block;
   position: absolute;
-  width: 101px;
-  height: 29px;
+  width: 97px;
+  height: 25px;
   border: 1px solid var(--accent-color);
   top: -15%;
-  right: -5%;
+  right: -4%;
+  /* top: -15px;
+  right: 3px; */
   box-sizing: border-box;
-} */
+  transition: all 500ms var(--transition);
+}
+
+.catalog__btn:hover::after,
+.viewed__btn::after {
+  top: 0;
+  right: 0;
+}
+
 .catalog__button-container {
   margin: 0 auto;
 }

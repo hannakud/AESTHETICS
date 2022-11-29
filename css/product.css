@@ -92,6 +92,25 @@
 }
 .product-info__btn {
   padding: 10px 62px;
+  position: relative;
+}
+
+.product-info__btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 59px;
+  border: 2px solid var(--accent-color);
+  top: -15%;
+  right: -4%;
+  box-sizing: border-box;
+  transition: all 500ms var(--transition);
+}
+
+.product-info__btn:hover::after {
+  top: 0;
+  right: 0;
 }
 
 .product-info__price-fav {
