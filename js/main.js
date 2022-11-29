@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
     contenContacts.removeClass('cabinet__form-wrapper--active');
     contentAddressbook.removeClass('addressbook__container--active');
-    contentWishlist.removeClass('wishlist__container--active');
+    contentWishlist.removeClass('cabinet__tab-content--active');
     contentHistory.removeClass('history__container--active');
   }
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
   tabWishlist.click(() => {
     removeClasses();
     tabWishlist.addClass('cabinet__item--active');
-    contentWishlist.addClass('wishlist__container--active');
+    contentWishlist.addClass('cabinet__tab-content--active');
   });
   tabHistory.click(() => {
     removeClasses();

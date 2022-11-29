@@ -83,9 +83,9 @@
     <main>
       <section class="cabinet layout">
         <div class="cabinet__container">
-          <h2 class="cabnet__title">Особистий кабінет</h2>
+          <h2 class="cabinet__title">Особистий кабінет</h2>
           <div class="cabinet__content">
-            <ul class="cabinet__list">
+            <ul class="cabinet__tab-list">
               <li id="contacts-tab" class="cabinet__item cabinet__item--active">
                 <a href="#" class="cabinet__link">Контактна інформація</a>
               </li>
@@ -99,7 +99,10 @@
                 <a href="#" class="cabinet__link">Історія замовлень</a>
               </li>
             </ul>
-            <div id="contacts-content" class="cabinet__form-wrapper cabinet__form-wrapper--active">
+            <div
+              id="contacts-content"
+              class="cabinet__form-wrapper cabinet__form-wrapper--active cabinet__tab-content"
+            >
               <form class="cabinet__form" autocomplete="on">
                 <div class="cabinet__form-container">
                   <div class="cabinet__form-item">
@@ -160,15 +163,16 @@
                     />
                   </div>
                   <div class="cabinet__form-item cabinet__form-item--last">
-                    <a href="#" class="cabinet__form-btn button__more button__more--right"
-                      >Вийти
-                    </a>
+                    <a href="#" class="cabinet__form-btn button-more button-more--right">Вийти </a>
                   </div>
                 </div>
               </form>
               <a href="#" class="cabinet__save-btn button">Зберегти</a>
             </div>
-            <div id="addressbook-content" class="addressbook addressbook__container">
+            <div
+              id="addressbook-content"
+              class="addressbook addressbook__container cabinet__tab-content"
+            >
               <form class="addressbook__form" autocomplete="on">
                 <div class="addressbook__left-wrapper">
                   <div class="addressbook__left-container">
@@ -212,24 +216,191 @@
                 </div>
               </form>
             </div>
-            <div id="wishlist-content" class="wishlist wishlist__container">
+            <ul id="wishlist-content" class="wishlist cabinet__tab-content">
               <ul class="wishlist__list">
-                <li class="wishlist__item"></li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate5.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">В наявності</div>
+                  </div>
+                  <h4 class="wishlist__title">Флюїд для обличчя для сухої шкіри</h4>
+                  <div class="wishlist__price">630 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist2.png"
+                    alt="Mattifying day cream for oily skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate5.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">В наявності</div>
+                  </div>
+                  <h4 class="wishlist__title">Матуючий денний крем для жирної шкіри</h4>
+                  <div class="wishlist__price">680 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist3.png"
+                    alt="Moisturizing serum for normal skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">Залишилось 3 шт</div>
+                  </div>
+                  <h4 class="wishlist__title">Зволожуюча сироватка для нормальної шкіри</h4>
+                  <div class="wishlist__price">480 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate5.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">В наявності</div>
+                  </div>
+                  <h4 class="wishlist__title">Флюїд для обличчя для сухої шкіри</h4>
+                  <div class="wishlist__price">630 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate5.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">В наявності</div>
+                  </div>
+                  <h4 class="wishlist__title">Флюїд для обличчя для сухої шкіри</h4>
+                  <div class="wishlist__price">630 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+                <li class="wishlist__list-item">
+                  <img
+                    src="./images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="wishlist__img"
+                  />
+                  <div class="wishlist__item-info">
+                    <img src="./images/icon/rate5.svg" alt="rate" class="wishlist__rate" />
+                    <div class="wishlist__amount">В наявності</div>
+                  </div>
+                  <h4 class="wishlist__title">Флюїд для обличчя для сухої шкіри</h4>
+                  <div class="wishlist__price">630 грн</div>
+                  <div class="wishlist__action">
+                    <a class="wishlist__cart-btn button-small" href="#">В кошик</a>
+                    <a class="wishlist__remove-btn button-link" href="#">Видалити</a>
+                  </div>
+                </li>
+              </ul>
+              <!-- <ul class="wishlist__list">
+                <li class="wishlist__item">
+                  <img
+                    src="./images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    widtt="80"
+                    class="wishlist__img"
+                  />
+                </li>
                 <li class="wishlist__item"></li>
                 <li class="wishlist__item">Флюїд для обличчя для сухої шкіри</li>
                 <li class="wishlist__item">630 грн</li>
                 <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
               </ul>
               <ul class="wishlist__list">
-                <li class="wishlist__item"></li>
+                <li class="wishlist__item">
+                  <img
+                    src="./images/photos/wishlist2.png"
+                    alt="day cream"
+                    widtt="80"
+                    class="wishlist__img"
+                  />
+                </li>
                 <li class="wishlist__item"></li>
                 <li class="wishlist__item">Матуючий денний крем для жирної шкіри</li>
                 <li class="wishlist__item">680 грн</li>
                 <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
               </ul>
+              <ul class="wishlist__list">
+                <li class="wishlist__item">
+                  <img
+                    src="./images/photos/wishlist3.png"
+                    alt="serum for face"
+                    widtt="80"
+                    class="wishlist__img"
+                  />
+                </li>
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item">Зволожуюча сироватка для нормальної шкіри</li>
+                <li class="wishlist__item">680 грн</li>
+                <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
+              </ul>
+              <ul class="wishlist__list">
+                <li class="wishlist__item">
+                  <img
+                    src="./images/photos/wishlist3.png"
+                    alt="day cream"
+                    widtt="80"
+                    class="wishlist__img"
+                  />
+                </li>
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item">Матуючий денний крем для жирної шкіри</li>
+                <li class="wishlist__item">680 грн</li>
+                <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
+              </ul> -->
+            </ul>
+            <div id="history-content" class="history history__container cabinet__tab-content">
+              <div class="history__content">
+                <div class="history__content-item">
+                  <p class="history__content-text">Замовлення №5647</p>
+                  <ul class="history__content-list">
+                    <li class="history__content-inner">Дата замовлення:</li>
+                    <li class="history__content-inner">9.08.2022</li>
+                  </ul>
+                  <ul class="history__content-list">
+                    <li class="history__content-inner">Статус:</li>
+                    <li class="history__content-inner">В обробці</li>
+                  </ul>
+                </div>
+                <div class="history__content-item"></div>
+              </div>
             </div>
           </div>
-          <div id="history-content" class="history history__container">zaloopa4</div>
         </div>
       </section>
     </main>

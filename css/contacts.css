@@ -95,3 +95,6 @@
   align-self: end;
   border-style: none;
 }
+.contacts__form-btn::after {
+  border: 1px solid var(--light-font-color);
+}
