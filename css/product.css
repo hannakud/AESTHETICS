@@ -57,7 +57,7 @@
   margin-bottom: 34px;
 }
 .product-info__rate {
-  background-image: url(../images/icon/rate.svg);
+  background-image: url(../assets/images/icon/rate.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100px;
@@ -94,7 +94,7 @@
   padding: 10px 62px;
   position: relative;
 }
-/* 
+/*
 .product-info__btn::after {
   content: '';
   display: block;
@@ -114,7 +114,7 @@
 } */
 
 .product-info__price-fav {
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../assets/images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 36px;
@@ -123,7 +123,7 @@
 }
 
 .product-info__price-fav:hover {
-  background-image: url(../images/icon/heart_hover_favorite.svg);
+  background-image: url(../assets/images/icon/heart_hover_favorite.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -191,7 +191,7 @@
   max-width: 444px;
 }
 .feedbacks__stars-five {
-  background-image: url(../images/icon/rate5.svg);
+  background-image: url(../assets/images/icon/rate5.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100px;
@@ -199,7 +199,7 @@
   align-self: center;
 }
 .feedbacks__stars-four {
-  background-image: url(../images/icon/rate.svg);
+  background-image: url(../assets/images/icon/rate.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100px;
@@ -319,7 +319,7 @@
   position: absolute;
   right: 11px;
   top: 11px;
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../assets/images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 36px;

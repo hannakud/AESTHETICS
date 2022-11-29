@@ -23,7 +23,7 @@
 
 .catalog__list-sort-link::after {
   content: '';
-  background-image: url(../images/icon/expand.svg);
+  background-image: url(../assets/images/icon/expand.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 11px;
@@ -93,7 +93,7 @@
 }
 
 .catalog__checkbox:checked + .catalog__custom-icon {
-  background-image: url(../images/icon/inside_checkbox.png);
+  background-image: url(../assets/images/icon/inside_checkbox.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -164,7 +164,7 @@
   position: absolute;
   right: 11px;
   top: 11px;
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../assets/images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 36px;
@@ -173,14 +173,14 @@
 }
 
 .catalog__link-fav:hover {
-  background-image: url(../images/icon/heart_hover_favorite.svg);
+  background-image: url(../assets/images/icon/heart_hover_favorite.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .catalog__link-fav:active {
-  background-image: url(../images/icon/heart_active_favorite.svg);
+  background-image: url(../assets/images/icon/heart_active_favorite.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -290,7 +290,7 @@
   position: absolute;
   right: 11px;
   top: 11px;
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../assets/images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 36px;

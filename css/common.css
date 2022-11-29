@@ -306,24 +306,24 @@ body {
   height: 40px;
 }
 .header__icons-item:nth-child(1) {
-  background-image: url(../images/icon/cabinet.svg);
+  background-image: url(../assets/images/icon/cabinet.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__icons-item:nth-child(2) {
-  background-image: url(../images/icon/heart.svg);
+  background-image: url(../assets/images/icon/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__icons-item:nth-child(3) {
-  background-image: url(../images/icon/basket.svg);
+  background-image: url(../assets/images/icon/basket.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .header__icons-item:nth-child(1):hover,
 .header__icons-item:nth-child(1):focus {
-  background-image: url(../images/icon/cabinet_hover.svg);
+  background-image: url(../assets/images/icon/cabinet_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -331,14 +331,14 @@ body {
 
 .header__icons-item:nth-child(2):hover,
 .header__icons-item:nth-child(2):focus {
-  background-image: url(../images/icon/heart_hover.svg);
+  background-image: url(../assets/images/icon/heart_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .header__icons-item:nth-child(3):hover,
 .header__icons-item:nth-child(3):focus {
-  background-image: url(../images/icon/basket_hover.svg);
+  background-image: url(../assets/images/icon/basket_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -369,11 +369,13 @@ body {
   right: -4%;
   box-sizing: border-box;
   transition: all 500ms var(--transition);
+  z-index: -1;
 }
 
 .button:hover::after {
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
+  height: 61px;
 }
 .arrow__fixed {
   display: block;
@@ -406,7 +408,7 @@ body {
 
 .button-more--right::after {
   right: -40px;
-  content: url(../images/icon/arrow-right.png);
+  content: url(../assets/images/icon/arrow-right.png);
   position: absolute;
   transition: opacity 250ms var(--transition);
   opacity: 0;
@@ -422,7 +424,7 @@ body {
 }
 
 .button-more--bottom::after {
-  content: url(../images/icon/arrow-bottom.png);
+  content: url(../assets/images/icon/arrow-bottom.png);
   position: absolute;
   opacity: 0;
   left: 95px;
@@ -496,43 +498,43 @@ body {
 }
 
 .social__item:nth-child(1) {
-  background-image: url(../images/icon/instagram.svg);
+  background-image: url(../assets/images/icon/instagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .social__item:nth-child(2) {
-  background-image: url(../images/icon/email.svg);
+  background-image: url(../assets/images/icon/email.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .social__item:nth-child(3) {
-  background-image: url(../images/icon/phone.svg);
+  background-image: url(../assets/images/icon/phone.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social__item:nth-child(4) {
-  background-image: url(../images/icon/address.svg);
+  background-image: url(../assets/images/icon/address.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .social__item:nth-child(1):hover,
 .social__item:nth-child(1):focus {
-  background-image: url(../images/icon/instagram_hover.svg);
+  background-image: url(../assets/images/icon/instagram_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .social__item:nth-child(2):hover,
 .social__item:nth-child(2):focus {
-  background-image: url(../images/icon/email_hover.svg);
+  background-image: url(../assets/images/icon/email_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .social__item:nth-child(3):hover,
 .social__item:nth-child(3):focus {
-  background-image: url(../images/icon/phone_hover.svg);
+  background-image: url(../assets/images/icon/phone_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -540,7 +542,7 @@ body {
 
 .social__item:nth-child(4):hover,
 .social__item:nth-child(4):focus {
-  background-image: url(../images/icon/address_hover.svg);
+  background-image: url(../assets/images/icon/address_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -561,7 +563,7 @@ body {
 .pay-icons__item:nth-child(1) {
   width: 52px;
   height: 32px;
-  background-image: url(../images/icon/mastercard.svg);
+  background-image: url(../assets/images/icon/mastercard.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -569,7 +571,7 @@ body {
 .pay-icons__item:nth-child(2) {
   width: 76px;
   height: 25px;
-  background-image: url(../images/icon/visa.svg);
+  background-image: url(../assets/images/icon/visa.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -577,14 +579,14 @@ body {
 .pay-icons__item:nth-child(3) {
   width: 83px;
   height: 34px;
-  background-image: url(../images/icon/apay.svg);
+  background-image: url(../assets/images/icon/apay.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .pay-icons__item:nth-child(1):hover,
 .pay-icons__item:nth-child(1):focus {
-  background-image: url(../images/icon/mastercard_hover.svg);
+  background-image: url(../assets/images/icon/mastercard_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -592,7 +594,7 @@ body {
 
 .pay-icons__item:nth-child(2):hover,
 .pay-icons__item:nth-child(2):focus {
-  background-image: url(../images/icon/visa_hover.svg);
+  background-image: url(../assets/images/icon/visa_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -600,7 +602,7 @@ body {
 
 .pay-icons__item:nth-child(3):hover,
 .pay-icons__item:nth-child(3):focus {
-  background-image: url(../images/icon/apay_hover.svg);
+  background-image: url(../assets/images/icon/apay_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

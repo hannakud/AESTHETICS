@@ -15,7 +15,6 @@
 }
 .cabinet__content {
   display: flex;
-  gap: 28px;
   flex-direction: column;
   min-height: 470px;
   width: 928px;
@@ -23,7 +22,7 @@
 .cabinet__tab-list {
   display: flex;
   gap: 43px;
-  margin-bottom: 77px;
+  margin-bottom: 39px;
 }
 
 .cabinet__link {
@@ -34,13 +33,10 @@
 }
 .cabinet__form-wrapper {
   display: none;
-}
-
-.cabinet__form-wrapper--active {
-  display: flex;
   flex-direction: column;
   gap: 51px;
 }
+
 .cabinet__form {
   display: flex;
   justify-content: space-between;
@@ -95,9 +91,6 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 .addressbook {
   display: none;
-}
-.addressbook__container--active {
-  display: block;
 }
 
 /* addressbook */
@@ -189,29 +182,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .wishlist {
   display: none;
   max-height: 297px;
+  padding-top: 38px;
 }
-.cabinet__tab-content--active {
-  display: flex;
-  flex-direction: column;
-  /* width: 928px;
-  align-self: center;
-  margin-top: 50px;
-  overflow-y: auto;
-  margin-bottom: 63px;
-  padding-right: 67px; */
-}
+
 .wishlist__list {
   display: flex;
   padding: 0 48px 0 0;
   overflow-y: auto;
   flex-direction: column;
-  /* display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  border-bottom: 1px solid var(--accent-color);
-  padding-bottom: 9px;
-  align-items: center; */
 }
 
 .wishlist__list-item {
@@ -233,7 +211,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 81px;
+  margin-right: 20px;
+  width: 161px;
 }
 .wishlist__rate {
   width: 100px;
@@ -248,8 +227,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
-  max-width: 210px;
-  margin-right: 70px;
+  width: 240px;
+  margin-right: 40px;
   color: var(--main-font-color);
 }
 
@@ -279,28 +258,123 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 .history {
   display: none;
-}
-.history__container--active {
-  display: block;
-}
-.history__content {
-  max-width: 1016px;
-  display: flex;
-  flex-direction: column;
-  gap: 84px;
-  width: 100%;
-  flex-wrap: wrap;
-  max-height: 430px;
-  overflow: hidden;
+  margin-right: -88px;
 }
 
-.history__content-item {
-  font-family: 'Candara';
-  font-weight: 400;
+.history__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  margin-bottom: 59px;
+}
+
+.history__item {
+  width: calc(50% - 42px);
+}
+
+.history__order-number {
   font-size: 20px;
-  line-height: 1.1;
-  color: var(--black-color);
+  line-height: 1;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.history__order-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.history__order-date {
+  width: max-content;
+}
+
+.history__order-status {
+  width: max-content;
+}
+
+.history__order-text {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.history__order-amount {
+  font-size: 20px;
+  line-height: 1;
+  text-align: right;
+}
+.history__products-list {
+  max-height: 305px;
+  overflow-y: auto;
+  padding-right: 20px;
+  margin-bottom: 14px;
+}
+
+.history__product-item {
+  height: 98px;
+  padding: 9px 0;
+  border-style: solid;
+  border-color: var(--accent-color);
+  border-width: 1px 0;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.history__product-image {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-right: 9px;
+}
+.history__product-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.history__product-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  height: 100%;
+  justify-content: space-between;
+  width: 209px;
+  margin-right: 10px;
+}
+
+.history__product-amount {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.history__product-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.history__product-price {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.history__product-rate {
+  width: 100px;
+  position: relative;
+  left: 20px;
+}
+
+.history__more-button {
+  margin: 0 auto;
+}
+
+.history__more {
+  margin-bottom: 64px;
+}
+
+.cabinet__tab-content--active {
+  display: flex;
+  flex-direction: column;
 }

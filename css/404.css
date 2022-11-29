@@ -10,17 +10,17 @@
 } */
 
 .header__icons-item--white:nth-child(1) {
-  background-image: url(../images/icon/white_cabinet.svg);
+  background-image: url(../assets/images/icon/white_cabinet.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__icons-item--white:nth-child(2) {
-  background-image: url(../images/icon/white_heart.svg);
+  background-image: url(../assets/images/icon/white_heart.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .header__icons-item--white:nth-child(3) {
-  background-image: url(../images/icon/white_basket.svg);
+  background-image: url(../assets/images/icon/white_basket.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -48,7 +48,7 @@
   background-size: contain;
 } */
 .mistake {
-  background-image: url(../images/photos/404.png);
+  background-image: url(../assets/images/photos/404.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
