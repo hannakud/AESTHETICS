@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./css/common.css" type="text/css" />
     <link rel="stylesheet" href="./css/cabinet.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./images/photos/hero_img.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Cabinet</title>
   </head>
@@ -81,20 +86,20 @@
           <h2 class="cabnet__title">Особистий кабінет</h2>
           <div class="cabinet__content">
             <ul class="cabinet__list">
-              <li class="cabinet-item">
+              <li id="contacts-tab" class="cabinet__item cabinet__item--active">
                 <a href="#" class="cabinet__link">Контактна інформація</a>
               </li>
-              <li class="cabinet-item">
+              <li id="addressbook-tab" class="cabinet__item">
                 <a href="#" class="cabinet__link">Адресна книга</a>
               </li>
-              <li class="cabinet-item">
+              <li id="wishlist-tab" class="cabinet__item">
                 <a href="#" class="cabinet__link">Список бажань</a>
               </li>
-              <li class="cabinet-item">
+              <li id="history-tab" class="cabinet__item">
                 <a href="#" class="cabinet__link">Історія замовлень</a>
               </li>
             </ul>
-            <div class="cabinet__form-wrapper">
+            <div id="contacts-content" class="cabinet__form-wrapper cabinet__form-wrapper--active">
               <form class="cabinet__form" autocomplete="on">
                 <div class="cabinet__form-container">
                   <div class="cabinet__form-item">
@@ -163,7 +168,68 @@
               </form>
               <a href="#" class="cabinet__save-btn button">Зберегти</a>
             </div>
+            <div id="addressbook-content" class="addressbook addressbook__container">
+              <form class="addressbook__form" autocomplete="on">
+                <div class="addressbook__left-wrapper">
+                  <div class="addressbook__left-container">
+                    <div class="addressbook__left-block">1</div>
+                    <div class="addressbook__right-block">
+                      <p class="addressbook__text">Шевченко Світлана</p>
+                      <p class="addressbook__text">Місто Київ</p>
+                      <p class="addressbook__text">Градинська 11б, 85</p>
+                      <p class="addressbook__text">+38 068 564 77 99</p>
+                      <div class="addressbook__links">
+                        <a href="#" class="addressbook__link">Редагувати</a>
+                        <a href="#" class="addressbook__link">Видалити</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="addressbook__left-container">
+                    <div class="addressbook__left-block">2</div>
+                    <div class="addressbook__right-block">
+                      <p class="addressbook__text">Шевченко Світлана</p>
+                      <p class="addressbook__text">Місто Харків</p>
+                      <p class="addressbook__text">Трінклера 18, 65</p>
+                      <p class="addressbook__text">+38 068 564 77 99</p>
+                      <div class="addressbook__links">
+                        <a href="#" class="addressbook__link">Редагувати</a>
+                        <a href="#" class="addressbook__link">Видалити</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="addressbook__right-wrapper">
+                  <h4 class="addressbook__title">Додати нову адресу:</h4>
+                  <input type="text" class="addressbook__input" placeholder="ПІБ" />
+                  <input type="text" class="addressbook__input" placeholder="Місто" />
+                  <div class="addressbook__input-wrapper">
+                    <input type="text" class="addressbook__input" placeholder="Вулиця" />
+                    <input type="text" class="addressbook__input" placeholder="Корпус" />
+                    <input type="text" class="addressbook__input" placeholder="Квартира" />
+                  </div>
+                  <input type="text" class="addressbook__input" placeholder="Поштове відділення" />
+                  <input type="tel" class="addressbook__input" placeholder="Номер телефон" />
+                </div>
+              </form>
+            </div>
+            <div id="wishlist-content" class="wishlist wishlist__container">
+              <ul class="wishlist__list">
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item">Флюїд для обличчя для сухої шкіри</li>
+                <li class="wishlist__item">630 грн</li>
+                <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
+              </ul>
+              <ul class="wishlist__list">
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item"></li>
+                <li class="wishlist__item">Матуючий денний крем для жирної шкіри</li>
+                <li class="wishlist__item">680 грн</li>
+                <li class="wishlist__item"><a class="wishlist__btn" href="#">В кошик</a></li>
+              </ul>
+            </div>
           </div>
+          <div id="history-content" class="history history__container">zaloopa4</div>
         </div>
       </section>
     </main>

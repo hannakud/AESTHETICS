@@ -17,5 +17,47 @@ $(document).ready(function () {
     contentFeedbacks.addClass('product__extended-info--active');
     contentIngredients.removeClass('product__extended-info--active');
   });
+  // Product tabs end
+
+  // Cabinet tabs start
+  const tabContacts = $(`#contacts-tab`);
+  const contenContacts = $(`#contacts-content`);
+  const tabAddressbook = $(`#addressbook-tab`);
+  const contentAddressbook = $(`#addressbook-content`);
+  const tabWishlist = $(`#wishlist-tab`);
+  const contentWishlist = $(`#wishlist-content`);
+  const tabHistory = $(`#history-tab`);
+  const contentHistory = $(`#history-content`);
+
+  function removeClasses() {
+    [tabContacts, tabAddressbook, tabWishlist, tabHistory].forEach(tab => {
+      tab.removeClass('cabinet__item--active');
+    });
+    contenContacts.removeClass('cabinet__form-wrapper--active');
+    contentAddressbook.removeClass('addressbook__container--active');
+    contentWishlist.removeClass('wishlist__container--active');
+    contentHistory.removeClass('history__container--active');
+  }
+
+  tabContacts.click(() => {
+    removeClasses();
+    tabContacts.addClass('cabinet__item--active');
+    contenContacts.addClass('cabinet__form-wrapper--active');
+  });
+  tabAddressbook.click(() => {
+    removeClasses();
+    tabAddressbook.addClass('cabinet__item--active');
+    contentAddressbook.addClass('addressbook__container--active');
+  });
+  tabWishlist.click(() => {
+    removeClasses();
+    tabWishlist.addClass('cabinet__item--active');
+    contentWishlist.addClass('wishlist__container--active');
+  });
+  tabHistory.click(() => {
+    removeClasses();
+    tabHistory.addClass('cabinet__item--active');
+    contentHistory.addClass('history__container--active');
+  });
 });
-// Product tabs end
+// Cabinet tabs end
