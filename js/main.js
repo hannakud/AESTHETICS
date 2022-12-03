@@ -58,5 +58,24 @@ $(document).ready(function() {
         tabHistory.addClass('cabinet__item--active');
         contentHistory.addClass('cabinet__tab-content--active');
     });
+    // Cabinet tabs end
+    // Order tabs end
+    const tabPerson = $(`#person-tab`);
+    const tabDetails = $(`#details-tab`);
+    const personContent = $(`#person-content`);
+    const detailsContent = $(`#details-content`);
+
+    tabPerson.click(() => {
+        $('#person-tab .number-round').addClass('number-round--active');
+        $('#details-tab .number-round').removeClass('number-round--active');
+        personContent.addClass('order__step-container--active')
+        detailsContent.removeClass('order__step-container--active')
+    })
+    tabDetails.click(() => {
+        $('#details-tab .number-round').addClass('number-round--active');
+        $('#person-tab .number-round').removeClass('number-round--active');
+        detailsContent.addClass('order__step-container--active')
+        personContent.removeClass('order__step-container--active')
+    })
+    // Order tabs end
 });
-// Cabinet tabs end

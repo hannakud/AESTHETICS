@@ -1,0 +1,11 @@
+@mixin font($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin flex-list($gap: 30px) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}

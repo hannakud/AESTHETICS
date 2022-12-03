@@ -1,0 +1,33 @@
+.callback {
+  &__container {
+    background-image: url(../../assets/images/photos/contacts_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-wrapper {
+    background-color: rgba(75, 96, 73, 0.38);
+    backdrop-filter: blur(7.5px);
+    height: 390px;
+    width: 582px;
+    padding: 20px;
+    margin: 109px 472px 109px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    @include font(60px, 400, 1.17);
+    font-family: 'Poiret One', normal;
+    color: var(--color-light-font);
+  }
+  &__text {
+    @include font(40px, 400, 1.18);
+    font-family: 'Poiret One', normal;
+    color: var(--color-light-font);
+  }
+}

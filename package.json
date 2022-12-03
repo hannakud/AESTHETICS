@@ -1,0 +1,32 @@
+{
+  "name": "aesthetics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass scss/main.scss css/main/main.css --watch",
+    "build": "sass scss/main.scss css/main/main.css && postcss css/main/main.css --use autoprefixer -d css/main/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannakud/AESTHETICS.git"
+  },
+  "author": "Hanna Kudriashova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannakud/AESTHETICS/issues"
+  },
+  "homepage": "https://github.com/hannakud/AESTHETICS#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.1.0"
+  },
+  "browserslist": [
+    ">1%", "last 2 versions"
+  ]
+}

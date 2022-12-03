@@ -1,0 +1,28 @@
+// utils
+@import './utils/_mixins.scss';
+
+// globals
+@import './common/_common.scss';
+@import './common/_fonts.scss';
+@import './common/normalize.scss';
+
+// components
+@import './components/_layout.scss';
+@import './components/_buttons.scss';
+@import "./components/_inputs.scss";
+@import "./components/_misc.scss";
+@import "./components/_controls.scss";
+@import "./components/_products-list.scss";
+
+//pages
+@import './pages/_index.scss';
+@import './pages/_blog.scss';
+@import './pages/_cabinet.scss';
+@import './pages/_callback.scss';
+@import './pages/_catalog.scss';
+@import './pages/_contacts.scss';
+@import './pages/_delivery.scss';
+@import './pages/_gratitude.scss';
+@import './pages/_product.scss';
+@import './pages/_order.scss';
+@import './pages/_404.scss';

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main/main.css" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/images/photos/hero_img.png" />
+    <script type="text/javascript" src="./js/vendors/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>My order</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__layout">
+        <div class="header__logo logo">
+          <a href="./index.html">
+            <svg class="header__icons-icon" width="246" height="144">
+              <use href="./assets/images/icon/sprite.svg#icon-logo_green"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./catalog.html">Каталог</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./delivery.html">Доставка та оплата</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./blog.html">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <ul class="header__icons-list">
+            <li class="header__icons-item">
+              <a
+                class="header__icons-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                href="./cabinet.html"
+              >
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a
+                class="header__icons-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                href="#"
+              >
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a
+                class="header__icons-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                href="./order.html"
+              >
+              </a>
+            </li>
+          </ul>
+          <h1 class="title-hidden">AESTHETICS</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="order layout">
+        <div class="order__container">
+          <h2 class="order__title">Оформлення замовлення</h2>
+          <ul class="order__tab-list">
+            <li id="person-tab" class="order__step">
+              <a href="#" class="order__link">
+                <div class="number-round number-round--active order__step-number">1</div>
+                Особисті данні
+              </a>
+            </li>
+            <li id="details-tab" class="order__step">
+              <a href="#" class="order__link">
+                <div class="number-round order__step-number">2</div>
+                Оплата / Доставка</a
+              >
+            </li>
+          </ul>
+          <form action="#" class="order__form">
+            <div
+              id="person-content"
+              class="personal-data order__step-container order__step-container--active"
+            >
+              <div class="personal-data__row form-input__row">
+                <label class="personal-data__input-label form-input__label" for="name"
+                  >Ваше ім’я та прізвище</label
+                >
+                <input
+                  class="personal-data__input form-input__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Степан Бандера"
+                  required="required"
+                />
+              </div>
+              <div class="personal-data__row form-input__row">
+                <label class="personal-data__input-label form-input__label" for="email"
+                  >E-mail</label
+                >
+                <input
+                  class="personal-data__input form-input__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="stepan.bandera@oun.upa"
+                  required="required"
+                />
+              </div>
+              <div class="personal-data__row form-input__row">
+                <label class="personal-data__input-label form-input__label" for="tel"
+                  >Номер телефону</label
+                >
+                <input
+                  class="personal-data__input form-input__input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  required="required"
+                  placeholder="+380635514881"
+                />
+              </div>
+            </div>
+            <div id="details-content" class="delivery-details order__step-container">
+              <div class="delivery-details__column">
+                <div class="delivery-details__method radio-group">
+                  <div class="radio-group__title">Оберіть спосіб доставки:</div>
+                  <div class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      id="post-office"
+                      name="radio-group-delivery-method"
+                      checked
+                    />
+                    <label class="radio__label" for="post-office">Нова пошта</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      id="courier"
+                      name="radio-group-delivery-method"
+                    />
+                    <label class="radio__label" for="courier"
+                      >Доставка кур’єром (безкоштовно від 2000 грн)</label
+                    >
+                  </div>
+                </div>
+                <div class="delivery-details__payment radio-group">
+                  <div class="radio-group__title">Оберіть спосіб оплати:</div>
+                  <div class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      id="post-payment"
+                      name="radio-group-payment"
+                      checked
+                    />
+                    <label class="radio__label" for="post-payment">Оплата при отриманні</label>
+                  </div>
+                  <div class="radio">
+                    <input class="radio__input" type="radio" id="card" name="radio-group-payment" />
+                    <label class="radio__label" for="card">Банківською картою</label>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-details__column delivery-details__column--narrow">
+                <div class="delivery-details__address radio-group">
+                  <div class="radio-group__title">Оберіть адресу доставки:</div>
+                  <div class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      id="address-one"
+                      name="radio-group-address"
+                      checked
+                    />
+                    <label class="radio__label" for="address-one">
+                      <span class="radio__label-row radio__label-row--bold">Шевченко Світлана</span>
+                      <span class="radio__label-row radio__label-row--bold">Місто КиЇв</span>
+                      <span class="radio__label-row radio__label-row--bold"
+                        >Градинська 11б, 85</span
+                      >
+                      <span class="radio__label-row radio__label-row--bold">+38 068 564 77 99</span>
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      id="address-two"
+                      name="radio-group-address"
+                    />
+                    <label class="radio__label" for="address-two">
+                      <span class="radio__label-row radio__label-row--bold">Шевченко Світлана</span>
+                      <span class="radio__label-row radio__label-row--bold">Місто КиЇв</span>
+                      <span class="radio__label-row radio__label-row--bold">Трінклера 18, 65</span>
+                      <span class="radio__label-row radio__label-row--bold">+38 068 564 77 99</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-list order__products">
+              <ul class="order-list__list products-list">
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Антиоксидантний крем для обличчя</h4>
+                  <div class="products-list__amount form-input">
+                    <label for="product"></label>
+                    <input id="product" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">850 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist2.png"
+                    alt="Mattifying day cream for oily skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Антивікова сироватка для зони навколо очей</h4>
+                  <div class="products-list__amount form-input">
+                    <label for="product2"></label>
+                    <input id="product2" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">900 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist3.png"
+                    alt="Moisturizing serum for normal skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Лосьон для нормальної та комбінованої шкіри</h4>
+                  <div class="products-list__amount form-input">
+                    <label for="product3"></label>
+                    <input id="product3" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">1050 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Антиоксидантний крем для обличчя</h4>
+                  <div class="products-list__amount form-input">
+                    <label for="product4"></label>
+                    <input id="product4" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">850 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Антивікова сироватка для зони навколо очей</h4>
+
+                  <div class="products-list__amount form-input">
+                    <label for="product5"></label>
+                    <input id="product5" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">900 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+                <li class="products-list__item">
+                  <img
+                    src="assets/images/photos/wishlist1.png"
+                    alt="fluid for dry skin"
+                    width="80"
+                    class="products-list__img"
+                  />
+                  <h4 class="products-list__title">Лосьон для нормальної та комбінованої шкіри</h4>
+                  <div class="products-list__amount form-input">
+                    <label for="product1"></label>
+                    <input id="product1" value="1" class="form-input__input" type="number" />
+                  </div>
+                  <div class="products-list__price">1050 грн</div>
+                  <a href="#" class="products-list__remove-button"></a>
+                </li>
+              </ul>
+              <div class="order-list__total">Загальна сумма: 5300 грн</div>
+            </div>
+            <a href="./gratitude.html" class="button order__submit-button">Оформити</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__layout">
+        <div class="footer__social layout social">
+          <ul class="footer__nav-list social__list">
+            <li class="footer__nav-item social__item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="footer__nav-link social__link"
+              ></a>
+            </li>
+            <li class="footer__nav-item social__item">
+              <a
+                href="aesthetics@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="footer__nav-link social__link"
+              ></a>
+            </li>
+            <li class="footer__nav-item social__item">
+              <a
+                href="tel:+380977114340"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="footer__nav-link social__link"
+              ></a>
+            </li>
+            <li class="footer__nav-item social__item">
+              <a href="#" class="footer__nav-link social__link"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container layout">
+            <div class="footer__logo logo">
+              <a class="footer__logo-link" href="#">
+                <svg class="footer__logo-icon" width="231" height="134">
+                  <use href="./assets/images/icon/sprite.svg#icon-logo_transparent"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__wrapper footer__nav-container">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="./catalog.html">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="./delivery.html"> Доставка та оплата </a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="./blog.html">Блог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="./contacts.html">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__wrapper footer__hour-container">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">Режим роботи</li>
+                <li class="footer__nav-item">Понеділок - Субота</li>
+                <li class="footer__nav-item">З 9:00 до 21:00</li>
+              </ul>
+            </div>
+            <div class="footer__wrapper">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Політика конфіденційності</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="tel:+380635542221">+38 (063) 554 22 21</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="tel:+380956789900">+38 (095) 678 99 00</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__wrapper pay-icons__wrapper">
+              <ul class="footer__nav-list pay-icons__list">
+                <li class="footer__nav-item pay-icons__item">
+                  <a href="#" class="footer__nav-link pay-icons__link"></a>
+                </li>
+                <li class="footer__nav-item pay-icons__item">
+                  <a href="#" class="footer__nav-link pay-icons__link"></a>
+                </li>
+                <li class="footer__nav-item pay-icons__item">
+                  <a href="#" class="footer__nav-link pay-icons__link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

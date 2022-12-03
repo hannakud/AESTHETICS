@@ -1,0 +1,92 @@
+.contacts {
+  &__container {
+    background-image: url(../../assets/images/photos/contacts_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 608px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-wrapper {
+    background-color: rgba(75, 96, 73, 0.38);
+    backdrop-filter: blur(7.5px);
+    height: 390px;
+    width: 582px;
+    padding: 20px;
+    margin: 109px 472px 109px 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__item {
+    @include font(20px, 400, 1.2);
+    color: var(--color-light-font);
+    position: relative;
+    &:last-child {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 490px;
+        background-color: var(--color-light-font);
+        bottom: -30px;
+      }
+    }
+    &:first-of-type {
+      @include font(26px, 400, 1.23);
+    }
+    &:nth-child(4) {
+      padding-top: 30px;
+    }
+  }
+  &__item-tel {
+    color: var(--color-light-font);
+  }
+  &__form {
+    margin-top: 60px;
+    width: 276px;
+    display: flex;
+    gap: 39px;
+  }
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__form-input {
+    border: 1px solid var(--color-light-font);
+    font-family: 'Candara';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--color-light-font);
+    background: transparent;
+    padding: 10px 15px;
+    height: 50px;
+    &:focus {
+      outline: none;
+      color: var(--color-grey-font);
+    }
+    &::placeholder {
+      color: var(--color-grey-font);
+      height: 30px;
+      &:focus {
+        color: var(--color-grey-font);
+      }
+    }
+  }
+  &__form-btn {
+    font-family: inherit;
+    padding: 10px 32px;
+    align-self: end;
+    border-style: none;
+    &::after {
+      content: '';
+      border: 1px solid var(--color-light-font);
+    }
+  }
+}

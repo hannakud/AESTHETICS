@@ -1,3 +1,3 @@
 # AESTHETICS
 
-check git
+to srart project npm i npm run dev

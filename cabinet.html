@@ -9,20 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/common.css" type="text/css" />
-    <link rel="stylesheet" href="./css/cabinet.css" type="text/css" />
+    <link rel="stylesheet" href="css/main/main.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./assets/images/photos/hero_img.png" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+    <script type="text/javascript" src="./js/vendors/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Cabinet</title>
   </head>
   <body>
     <header class="header">
-      <div class="layout header__layout">
+      <div class="header__layout">
         <div class="header__logo logo">
           <a href="./index.html">
             <svg class="header__icons-icon" width="246" height="144">
@@ -71,7 +66,7 @@
                 class="header__icons-link"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                href="#"
+                href="./order.html"
               >
               </a>
             </li>
@@ -101,7 +96,7 @@
             </ul>
             <div
               id="contacts-content"
-              class="cabinet__form-wrapper cabinet__form-wrapper--active cabinet__tab-content--active"
+              class="cabinet__form-wrapper cabinet__form-wrapper--active cabinet__tab-content cabinet__tab-content--active"
             >
               <form class="cabinet__form" autocomplete="on">
                 <div class="cabinet__form-container">
@@ -158,7 +153,7 @@
                       type="date"
                       name="date"
                       id="date"
-                      placeholder="08.10.1989"
+                      value="1989-10-08"
                       required="required"
                     />
                   </div>
@@ -176,7 +171,7 @@
               <form class="addressbook__form" autocomplete="on">
                 <div class="addressbook__left-wrapper">
                   <div class="addressbook__left-container">
-                    <div class="addressbook__left-block">1</div>
+                    <div class="number-round number-round--active addressbook__left-block">1</div>
                     <div class="addressbook__right-block">
                       <p class="addressbook__text">Шевченко Світлана</p>
                       <p class="addressbook__text">Місто Київ</p>
@@ -189,7 +184,7 @@
                     </div>
                   </div>
                   <div class="addressbook__left-container">
-                    <div class="addressbook__left-block">2</div>
+                    <div class="number-round  number-round--active addressbook__left-block">2</div>
                     <div class="addressbook__right-block">
                       <p class="addressbook__text">Шевченко Світлана</p>
                       <p class="addressbook__text">Місто Харків</p>
@@ -345,80 +340,92 @@
                   <ul class="history__products-list">
                     <li class="history__product-item">
                       <img
-                              src="assets/images/photos/wishlist1.png"
-                              alt="fluid for dry skin"
-                              width="80"
-                              class="history__product-image"
+                        src="./assets/images/photos/history1.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
                       />
                       <div class="history__product-info">
-                          <div class="history__product-title">Нічний антивіковій крем
-                              для сухої шкіри</div>
-                          <div class="history__product-amount">1 шт</div>
-                      </div>
-                        <div class="history__product-details">
-                            <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                            <div class="history__product-price">1460 грн </div>
+                        <div class="history__product-title">
+                          Нічний антивіковій крем для сухої шкіри
                         </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">860 грн</div>
+                      </div>
                     </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      </li>
-<!--                    <li class="history__product">text</li>-->
-<!--                    <li class="history__product">text</li>-->
-<!--                    <li class="history__product">text</li>-->
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history2.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">Гель для зняття макіяжу</div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">1460 грн</div>
+                      </div>
+                    </li>
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history3.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">
+                          Антивікова сироватка для зони навколо очей
+                        </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">900 грн</div>
+                      </div>
+                    </li>
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history4.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">
+                          Нічний антивіковій крем для сухої шкіри
+                        </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">1460 грн</div>
+                      </div>
+                    </li>
                   </ul>
-                  <div class="history__order-amount">
-                    Загальна сумма: 3220 грн
-                  </div>
+                  <div class="history__order-amount">Загальна сумма: 3220 грн</div>
                 </li>
                 <li class="history__item">
                   <h4 class="history__order-number">Замовлення №5647</h4>
@@ -429,89 +436,105 @@
                     </div>
                     <div class="history__order-status">
                       <p class="history__order-text">Статус:</p>
-                      <p class="history__order-text">В обробці</p>
+                      <p class="history__order-text">Доставлений</p>
                     </div>
                   </div>
                   <ul class="history__products-list">
                     <li class="history__product-item">
                       <img
-                              src="assets/images/photos/wishlist1.png"
-                              alt="fluid for dry skin"
-                              width="80"
-                              class="history__product-image"
+                        src="./assets/images/photos/history4.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
                       />
                       <div class="history__product-info">
-                          <div class="history__product-title">Нічний антивіковій крем
-                              для сухої шкіри</div>
-                          <div class="history__product-amount">1 шт</div>
-                      </div>
-                        <div class="history__product-details">
-                            <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                            <div class="history__product-price">1460 грн </div>
+                        <div class="history__product-title">
+                          Лосьон для нормальної та комбінованої шкіри
                         </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">1050 грн</div>
+                      </div>
                     </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      <li class="history__product-item">
-                          <img
-                                  src="assets/images/photos/wishlist1.png"
-                                  alt="fluid for dry skin"
-                                  width="80"
-                                  class="history__product-image"
-                          />
-                          <div class="history__product-info">
-                              <div class="history__product-title">Нічний антивіковій крем
-                                  для сухої шкіри</div>
-                              <div class="history__product-amount">1 шт</div>
-                          </div>
-                          <div class="history__product-details">
-                              <img src="assets/images/icon/rate5.svg" alt="rate" class="history__product-rate" />
-                              <div class="history__product-price">1460 грн </div>
-                          </div>
-                      </li>
-                      </li>
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history5.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">Скраб для чутливої шкіри</div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">890 грн</div>
+                      </div>
+                    </li>
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history6.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">
+                          Гель для глубокого очищення шкіри обличчя
+                        </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">890 грн</div>
+                      </div>
+                    </li>
+                    <li class="history__product-item">
+                      <img
+                        src="./assets/images/photos/history1.png"
+                        alt="fluid for dry skin"
+                        width="80"
+                        class="history__product-image"
+                      />
+                      <div class="history__product-info">
+                        <div class="history__product-title">
+                          Нічний антивіковій крем для сухої шкіри
+                        </div>
+                        <div class="history__product-amount">1 шт</div>
+                      </div>
+                      <div class="history__product-details">
+                        <img
+                          src="./assets/images/icon/rate5.svg"
+                          alt="rate"
+                          class="history__product-rate"
+                        />
+                        <div class="history__product-price">1460 грн</div>
+                      </div>
+                    </li>
                   </ul>
-                  <div class="history__order-amount">
-                    Загальна сумма: 3220 грн
-                  </div>
+                  <div class="history__order-amount">Загальна сумма: 3220 грн</div>
                 </li>
               </ul>
               <div class="history__more">
-                  <a href="#" class="button-more history__more-button button-more--bottom">Показати ще</a>
+                <a href="#" class="button-more history__more-button button-more--bottom"
+                  >Показати ще</a
+                >
               </div>
-
             </div>
           </div>
         </div>
@@ -519,14 +542,14 @@
     </main>
     <footer class="footer">
       <div class="footer__layout">
-        <div class="footer__social layout">
+        <div class="footer__social layout social">
           <ul class="footer__nav-list social__list">
             <li class="footer__nav-item social__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                class="footer__nav-link social-link"
+                class="footer__nav-link social__link"
               ></a>
             </li>
             <li class="footer__nav-item social__item">
@@ -534,7 +557,7 @@
                 href="aesthetics@gmail.com"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                class="footer__nav-link social-link"
+                class="footer__nav-link social__link"
               ></a>
             </li>
             <li class="footer__nav-item social__item">
@@ -542,11 +565,11 @@
                 href="tel:+380977114340"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                class="footer__nav-link social-link"
+                class="footer__nav-link social__link"
               ></a>
             </li>
             <li class="footer__nav-item social__item">
-              <a href="#" class="footer__nav-link social-link"></a>
+              <a href="#" class="footer__nav-link social__link"></a>
             </li>
           </ul>
         </div>
@@ -571,7 +594,7 @@
                   <a class="footer__nav-link" href="./blog.html">Блог</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a class="footer__nav-link" href="#">Контакти</a>
+                  <a class="footer__nav-link" href="./contacts.html">Контакти</a>
                 </li>
               </ul>
             </div>
