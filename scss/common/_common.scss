@@ -127,7 +127,13 @@ body {
   }
   &__nav-link {
     @include font(26px, 300, 1.22);
+    display: block;
     color: var(--color-main-font);
+    transition: color, transform 250ms var(--transition);
+    &:hover {
+      color: var(--color-accent);
+      transform: translateY(3px);
+    }
   }
   &__icons {
     display: flex;
@@ -151,12 +157,12 @@ body {
       background-image: url(../../assets/images/icon/cabinet.svg);
       background-repeat: no-repeat;
       background-position: center;
-    }
-    &:hover,
-    &:focus {
-      background-image: url(../../assets/images/icon/cabinet_hover.svg);
-      background-repeat: no-repeat;
-      background-position: center;
+      &:hover,
+      &:focus {
+        background-image: url(../../assets/images/icon/cabinet_hover.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
     &:nth-child(2) {
       background-image: url(../../assets/images/icon/heart.svg);
@@ -214,6 +220,7 @@ body {
     background-color: var(--color-accent);
     padding-top: 38px;
     padding-bottom: 25px;
+    height: 192px;
   }
   &__container {
     color: var(--color-light-font);
@@ -224,6 +231,10 @@ body {
   &__logo {
     margin-right: 87px;
   }
+  &__logo-link {
+    display: block;
+  }
+
   &__nav-list {
     display: flex;
     flex-direction: column;
@@ -312,7 +323,7 @@ body {
   }
   &__wrapper {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 75%;
   }
   &__item {

@@ -120,7 +120,13 @@ body {
   font-size: 26px;
   font-weight: 300;
   line-height: 1.22;
+  display: block;
   color: var(--color-main-font);
+  transition: color, transform 250ms var(--transition);
+}
+.header__nav-link:hover {
+  color: var(--color-accent);
+  transform: translateY(3px);
 }
 .header__icons {
   display: flex;
@@ -145,7 +151,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.header__icons-item:hover, .header__icons-item:focus {
+.header__icons-item:nth-child(1):hover, .header__icons-item:nth-child(1):focus {
   background-image: url(../../assets/images/icon/cabinet_hover.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -202,6 +208,7 @@ body {
   background-color: var(--color-accent);
   padding-top: 38px;
   padding-bottom: 25px;
+  height: 192px;
 }
 .footer__container {
   color: var(--color-light-font);
@@ -211,6 +218,9 @@ body {
 }
 .footer__logo {
   margin-right: 87px;
+}
+.footer__logo-link {
+  display: block;
 }
 .footer__nav-list {
   display: flex;
@@ -296,7 +306,7 @@ body {
 }
 .pay-icons__wrapper {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 75%;
 }
 .pay-icons__item:nth-child(1) {

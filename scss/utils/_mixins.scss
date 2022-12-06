@@ -9,3 +9,8 @@
   align-items: center;
   gap: $gap;
 }
+@mixin mobile {
+  @media screen and (min-width: 360px) {
+    @content;
+  }
+}
