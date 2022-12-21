@@ -609,7 +609,7 @@ body {
     height: 30px;
   }
   .header__icons-item--burger {
-    background-image: url(/assets/images/icon/burger.svg);
+    background-image: url(../../assets/images/icon/burger.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -654,7 +654,7 @@ body {
     height: 24px;
   }
   .header__icons-item--burger {
-    background-image: url(/assets/images/icon/burger.svg);
+    background-image: url(../../assets/images/icon/burger.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1374,7 +1374,7 @@ select {
   min-width: 100%;
 }
 .main-view__picture {
-  background-image: url(/assets/images/photos/hero_img.png);
+  background-image: url(../../assets/images/photos/hero_img.png);
   background-repeat: no-repeat;
   min-height: 804px;
   background-size: contain;
@@ -1502,7 +1502,7 @@ select {
     width: fit-content;
   }
   .main-view__picture {
-    background-image: url(/assets/images/photos/main_view_mob.png);
+    background-image: url(../../assets/images/photos/main_view_mob.png);
     background-repeat: no-repeat;
     min-height: 300px;
     width: 100%;
@@ -1812,7 +1812,7 @@ select {
   flex-direction: column;
   width: 100%;
   min-height: 1060px;
-  background-image: url(/assets/images/photos/new_img.png);
+  background-image: url(../../assets/images/photos/new_img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1937,7 +1937,7 @@ select {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .new {
     min-height: 240px;
-    background-image: url(/assets/images/photos/new_mob.png);
+    background-image: url(../../assets/images/photos/new_mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1966,7 +1966,7 @@ select {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .new {
-    background-image: url(/assets/images/photos/new_mob.png);
+    background-image: url(../../assets/images/photos/new_mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2009,7 +2009,7 @@ select {
   top: -100%;
 }
 .mobile-menu__close {
-  background-image: url(/assets/images/icon/close_white.svg);
+  background-image: url(../../assets/images/icon/close_white.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
