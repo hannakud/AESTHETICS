@@ -23,11 +23,11 @@
   &__title {
     @include font(60px, 400, 1.17);
     font-family: 'Poiret One', normal;
-    color: var(--color-light-font);
+    color: $color-main-font;
   }
   &__text {
     @include font(40px, 400, 1.18);
     font-family: 'Poiret One', normal;
-    color: var(--color-light-font);
+    color: $color-main-font;
   }
 }

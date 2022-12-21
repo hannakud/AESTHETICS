@@ -8,7 +8,7 @@
   &__item {
     padding: 9px 0;
     width: 100%;
-    border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid $color-accent;
     display: flex;
     height: 98px;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     @include font(20px, 600, 1.2);
     width: 260px;
     margin-right: 20px;
-    color: var(--color-main-font);
+    color: $color-main-font;
   }
   &__price {
     @include font(20px, 600, 1.2);
@@ -53,7 +53,7 @@
   }
   &__remove-btn {
     @include font(18px, 400, 1.5);
-    color: var(--color-main-font);
+    color: $color-main-font;
     text-decoration: underline;
   }
 
@@ -61,14 +61,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid var(--color-accent);
+    border: 1px solid $color-accent;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url(../../assets/images/icon/cross.svg) center no-repeat;
-    transition: all 250ms var(--transition);
+    transition: all 250ms $transition;
     &:hover {
-      color: var(--color-black);
+      color: $color-black;
       background: url(../../assets/images/icon/cross-black.svg) center no-repeat;
     }
   }

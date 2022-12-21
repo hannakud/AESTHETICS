@@ -5,7 +5,7 @@
   }
   &__title {
     @include font(40px, 600, 1.23);
-    color: var(--color-main-font);
+    color: $color-main-font;
     text-align: center;
   }
   &__tab-list {
@@ -19,7 +19,7 @@
   &__link {
     @include font(26px, 400, 1.23);
     @include flex-list(10px);
-    color: var(--color-black);
+    color: $color-black;
     display: flex;
   }
   &__step-container {
@@ -35,7 +35,7 @@
     margin-bottom: 50px;
   }
 
-  &__submit-button{
+  &__submit-button {
     margin-left: auto;
     margin-bottom: 50px;
   }
@@ -47,7 +47,6 @@
     max-height: 293px;
     overflow-y: auto;
     margin-bottom: 5px;
-
   }
   &__total {
     @include font(20px, 400, 1);

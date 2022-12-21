@@ -22,11 +22,11 @@
   }
   &__title {
     @include font(60px, 400, 1.17);
-    color: var(--color-light-font);
+    color: $color-light-font;
     font-family: 'Poiret One', normal;
   }
   &__text {
-    color: var(--color-light-font);
+    color: $color-light-font;
     @include font(40px, 400, 1.23);
   }
 }

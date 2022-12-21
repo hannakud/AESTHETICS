@@ -1,14 +1,14 @@
 .number-round {
   @include font(40px, 400, 1.2);
-  border: 1px solid var(--color-accent);
+  border: 1px solid $color-accent;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  transition: background-color 500ms var(--transition);
+  transition: background-color 500ms $transition;
 
   &--active {
-    background-color: var(--color-accent);
-    color: var(--color-light-font);
+    background-color: $color-accent;
+    color: $color-light-font;
   }
 }

@@ -7,3 +7,11 @@
     flex-direction: column;
   }
 }
+
+@include from320to479 {
+  .layout {
+    width: 360px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

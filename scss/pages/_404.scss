@@ -1,12 +1,12 @@
 .header {
   &__nav-link {
     &--white {
-      color: var(--color-light-font);
+      color: $color-light-font;
     }
   }
   &__nav {
     &--white {
-      border-bottom: 1px solid var(--color-light-font);
+      border-bottom: 1px solid $color-light-font;
     }
   }
   &__icons-item {

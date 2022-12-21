@@ -1,18 +1,19 @@
 // utils
 @import './utils/_mixins.scss';
+@import './utils/_variables.scss';
 
 // globals
 @import './common/_common.scss';
 @import './common/_fonts.scss';
-@import './common/normalize.scss';
+@import './common/_normalize.scss';
 
 // components
 @import './components/_layout.scss';
 @import './components/_buttons.scss';
-@import "./components/_inputs.scss";
-@import "./components/_misc.scss";
-@import "./components/_controls.scss";
-@import "./components/_products-list.scss";
+@import './components/_inputs.scss';
+@import './components/_misc.scss';
+@import './components/_controls.scss';
+@import './components/_products-list.scss';
 
 //pages
 @import './pages/_index.scss';

@@ -23,7 +23,7 @@
   }
   &__item {
     @include font(20px, 400, 1.2);
-    color: var(--color-light-font);
+    color: $color-light-font;
     position: relative;
     &:last-child {
       &::after {
@@ -32,7 +32,7 @@
         position: absolute;
         height: 1px;
         width: 490px;
-        background-color: var(--color-light-font);
+        background-color: $color-light-font;
         bottom: -30px;
       }
     }
@@ -44,7 +44,7 @@
     }
   }
   &__item-tel {
-    color: var(--color-light-font);
+    color: $color-light-font;
   }
   &__form {
     margin-top: 60px;
@@ -58,24 +58,24 @@
     gap: 5px;
   }
   &__form-input {
-    border: 1px solid var(--color-light-font);
+    border: 1px solid $color-light-font;
     font-family: 'Candara';
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
-    color: var(--color-light-font);
+    color: $color-main-font;
     background: transparent;
     padding: 10px 15px;
     height: 50px;
     &:focus {
       outline: none;
-      color: var(--color-grey-font);
+      color: $color-grey-font;
     }
     &::placeholder {
-      color: var(--color-grey-font);
+      color: $color-grey-font;
       height: 30px;
       &:focus {
-        color: var(--color-grey-font);
+        color: $color-grey-font;
       }
     }
   }
@@ -86,7 +86,7 @@
     border-style: none;
     &::after {
       content: '';
-      border: 1px solid var(--color-light-font);
+      border: 1px solid $color-light-font;
     }
   }
 }

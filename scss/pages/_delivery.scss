@@ -11,7 +11,7 @@
     flex-direction: column;
   }
   &__title {
-    background-color: var(--color-accent);
+    background-color: $color-accent;
     width: 398px;
     height: 120px;
     display: flex;
@@ -25,13 +25,13 @@
     }
   }
   &__title-text {
-    color: var(--color-light-font);
+    color: $color-light-font;
     @include font(26px, 600, 1.23);
   }
   &__details {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--color-accent);
+    border: 1px solid $color-accent;
     overflow: hidden;
     padding: 29px;
     gap: 30px;
@@ -40,10 +40,10 @@
   }
   &__subtitle {
     @include font(20px, 400, 1.5);
-    color: var(--color-light-font);
+    color: $color-light-font;
   }
   &__text {
-    color: var(--color-main-font);
+    color: $color-main-font;
     @include font(20px, 400, 1.2);
   }
 }
