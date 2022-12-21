@@ -247,9 +247,43 @@ body {
     gap: 20px;
   }
   .social__link {
-    display: block;
     width: 30px;
     height: 30px;
+  }
+  .social__item {
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social__item:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(1):hover, .social__item:nth-child(1):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(2):hover, .social__item:nth-child(2):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(3):hover, .social__item:nth-child(3):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(4):hover, .social__item:nth-child(4):focus {
+    background-size: contain;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -257,9 +291,43 @@ body {
     gap: 20px;
   }
   .social__link {
-    display: block;
     width: 30px;
     height: 30px;
+  }
+  .social__item {
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social__item:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(1):hover, .social__item:nth-child(1):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(2):hover, .social__item:nth-child(2):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(3):hover, .social__item:nth-child(3):focus {
+    background-size: contain;
+  }
+  .social__item:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .social__item:nth-child(4):hover, .social__item:nth-child(4):focus {
+    background-size: contain;
   }
 }
 .footer__nav-container {
@@ -682,47 +750,6 @@ body {
     display: none;
   }
 }
-.arrow {
-  display: none;
-}
-
-.social__link {
-  width: 30px;
-  height: 30px;
-}
-.social__item:nth-child(1) {
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-}
-.social__item:nth-child(1):hover, .social__item:nth-child(1):focus {
-  background-size: contain;
-}
-.social__item:nth-child(2) {
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-}
-.social__item:nth-child(2):hover, .social__item:nth-child(2):focus {
-  background-size: contain;
-}
-.social__item:nth-child(3) {
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-}
-.social__item:nth-child(3):hover, .social__item:nth-child(3):focus {
-  background-size: contain;
-}
-.social__item:nth-child(4) {
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-}
-.social__item:nth-child(4):hover, .social__item:nth-child(4):focus {
-  background-size: contain;
-}
-
 @font-face {
   font-family: "Candara";
   src: url("../../assets/fonts/Candara-Light.woff2") format("woff2"), url("../../assets/fonts/Candara-Light.woff") format("woff");

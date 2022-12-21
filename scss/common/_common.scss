@@ -278,21 +278,98 @@ body {
       gap: 20px;
     }
     &__link {
-      display: block;
       width: 30px;
       height: 30px;
     }
+    &__item {
+      transition: background-image 250ms $transition;
+      &:nth-child(1) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(2) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(4) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+    }
   }
 }
+
 @include from320to479 {
   .social {
     &__list {
       gap: 20px;
     }
     &__link {
-      display: block;
       width: 30px;
       height: 30px;
+    }
+    &__item {
+      transition: background-image 250ms $transition;
+      &:nth-child(1) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(2) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
+      &:nth-child(4) {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        &:hover,
+        &:focus {
+          background-size: contain;
+        }
+      }
     }
   }
 }
@@ -755,51 +832,3 @@ body {
     }
   }
 }
-.arrow {
-  display: none;
-}
-.social {
-  &__link {
-    width: 30px;
-    height: 30px;
-  }
-  &__item {
-    &:nth-child(1) {
-      width: 30px;
-      height: 30px;
-      background-size: contain;
-      &:hover,
-      &:focus {
-        background-size: contain;
-      }
-    }
-    &:nth-child(2) {
-      width: 30px;
-      height: 30px;
-      background-size: contain;
-      &:hover,
-      &:focus {
-        background-size: contain;
-      }
-    }
-    &:nth-child(3) {
-      width: 30px;
-      height: 30px;
-      background-size: contain;
-      &:hover,
-      &:focus {
-        background-size: contain;
-      }
-    }
-    &:nth-child(4) {
-      width: 30px;
-      height: 30px;
-      background-size: contain;
-      &:hover,
-      &:focus {
-        background-size: contain;
-      }
-    }
-  }
-}
-// }
