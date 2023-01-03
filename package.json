@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/hannakud/aesthetics.git"
+    "url": "git+https://github.com/hannakud/AESTHETICS.git"
   },
   "author": "Hanna Kudriashova",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/hannakud/aesthetics/issues"
+    "url": "https://github.com/hannakud/AESTHETICS/issues"
   },
-  "homepage": "https://gitlab.com/hannakud/aesthetics#readme",
+  "homepage": "https://github.com/hannakud/AESTHETICS#readme",
   "dependencies": {
     "sass": "^1.56.1"
   },
