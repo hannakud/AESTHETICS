@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/main/main.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./assets/images/photos/hero_img.png" />
+    <script type="text/javascript" src="./js/vendors/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Catalog</title>
   </head>
@@ -69,6 +70,15 @@
                 target="_blank"
                 rel="noreferrer noopener nofollow"
                 href="./order.html"
+              >
+              </a>
+            </li>
+            <li class="header__icons-item header__icons-item--burger">
+              <a
+                id="menu-open"
+                class="header__icons-link"
+                rel="noreferrer noopener nofollow"
+                href="javascript:void(0)"
               >
               </a>
             </li>
@@ -259,244 +269,7 @@
               <div class="catalog__list-sort-title">
                 <a href="#" class="catalog__list-sort-link">Сортування</a>
               </div>
-              <ul class="catalog__list">
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_1.png"
-                    alt="Facial fluid for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"></a>
-                  <a href="#" class="catalog__name-link">Флюїд для обличчя для сухої шкіри</a>
-                  <span class="catalog__span">630 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_2.png"
-                    alt="Facial fluid for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="./product.html" class="catalog__name-link"
-                    >Антиоксидантний крем для обличчя</a
-                  >
-                  <span class="catalog__span">850 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_3.png"
-                    alt="Facial fluid for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Гель для вмивання для проблемної шкіри</a>
-                  <span class="catalog__span">590 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_4.png"
-                    alt="Moisturizing serum for normal skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link"
-                    >Зволожуюча сироватка для нормальної шкіри</a
-                  >
-                  <span class="catalog__span">480 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_5.png"
-                    alt="Moisturizing cream for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Зволожуючий крем для сухої шкіри</a>
-                  <span class="catalog__span">830 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_6.png"
-                    alt="Facial toner for normal skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Тонік для обличчя для нормальної шкіри</a>
-                  <span class="catalog__span">450 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_7.png"
-                    alt="Facial fluid for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Пінка для очищення шкіри обличчя</a>
-                  <span class="catalog__span">560 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_8.png"
-                    alt="Day and night cream set"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Набір <br />Денний та нічний крем</a>
-                  <span class="catalog__span">1230 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_9.png"
-                    alt="Mattifying day cream for women's skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Матуючий денний крем для жиної шкіри</a>
-                  <span class="catalog__span">680 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_10.png"
-                    alt="Night antiaging cream for dry skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Нічний антивіковий крем для сухої шкіри</a>
-                  <span class="catalog__span">860 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_11.png"
-                    alt="Make-up remover gel"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link">Гель для зняття макіяжу</a>
-                  <span class="catalog__span">730 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_12.png"
-                    alt="Anti-age serum for the area around the eyes"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link"
-                    >Антивікова сироватка для зони навколо очей</a
-                  >
-                  <span class="catalog__span">900 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_13.png"
-                    alt="Lotion for normal and combination skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"> </a>
-                  <a href="#" class="catalog__name-link"
-                    >Лосьон для нормальної та комбінованої шкіри</a
-                  >
-                  <span class="catalog__span">1050 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_14.png"
-                    alt="Scrub for sensitive skin"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"></a>
-                  <a href="#" class="catalog__name-link">Скраб для чутливої шкіри</a>
-                  <span class="catalog__span">890 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-                <li class="catalog__list-item">
-                  <img
-                    src="assets/images/photos/catalogue_15.png"
-                    alt="Gel for deep cleansing of the skin of the face"
-                    class="catalog__img"
-                    width="234"
-                  />
-                  <a href="#" class="catalog__link-fav"></a>
-                  <a href="#" class="catalog__name-link"
-                    >Гель для глубокого очищення шкіри обличчя
-                  </a>
-                  <span class="catalog__span">890 грн</span>
-                  <div class="catalog__link-container">
-                    <a class="catalog__link-more" href="#">Детальніше</a>
-                    <a class="catalog__btn button-small" href="#">В кошик</a>
-                  </div>
-                </li>
-              </ul>
+              <ul id="catalog__list" class="catalog__list"></ul>
               <div class="catalog__button-container">
                 <a class="catalog__button button-more button-more--bottom" href="#">Показати ще</a>
               </div>
