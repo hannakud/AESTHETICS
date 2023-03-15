@@ -1,7 +1,7 @@
 const images = [
-  'url(../assets/images/photos/slide1.png)',
-  'url(../assets/images/photos/slide3.png)',
-  'url(../assets/images/photos/slide2.png)',
+  'url(/assets/images/photos/slide1.png)',
+  'url(/assets/images/photos/slide3.png)',
+  'url(/assets/images/photos/slide2.png)',
 ];
 
 const slider = document.querySelector('.slider');

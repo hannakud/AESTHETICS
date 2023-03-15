@@ -582,23 +582,11 @@
     height: 10px;
     border-radius: 50%;
     background-color: #ccc;
-    margin: 0 5px;
+    margin: 0px 5px;
     cursor: pointer;
   }
 }
-// .slider__dots {
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 32rem;
-// }
-// .slider__dot {
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 50%;
-//   background-color: #ccc;
-//   margin: 0 5px;
-//   cursor: pointer;
-// }
+
 .slider__dot.active {
   background-color: $color-accent;
 }
