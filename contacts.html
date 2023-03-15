@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="css/main/main.css" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./assets/images/photos/hero_img.png" />
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/vendors/jquery-3.6.1.min.js"></script>
     <title>Contacts</title>
   </head>
   <body>
@@ -86,7 +86,7 @@
       </div>
     </header>
     <main>
-      <section class="contacts layout">
+      <section id="main-section" class="contacts layout">
         <div class="contacts__container">
           <div class="contacts__list-wrapper">
             <ul class="contacts__list">
@@ -100,7 +100,7 @@
                 <a class="contacts__item-tel" href="tel:++380956789900">+38 (095) 678 99 00 </a>
               </li>
             </ul>
-            <form class="contacts__form" autocomplete="on">
+            <form id="contacts__form-submit" class="contacts__form" action="" autocomplete="on">
               <div class="contacts__input-wrapper">
                 <input
                   class="contacts__form-input"
@@ -108,19 +108,28 @@
                   name="name"
                   placeholder="Ваше им’я"
                   id="name"
-                  required="required"
+                  required
                 />
                 <input
                   class="contacts__form-input"
                   type="tel"
                   name="tel"
                   id="tel"
-                  required="required"
+                  required
                   placeholder="Номер телефону"
+                  pattern="[+]38[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*"
+                  minlength="13"
+                  maxlength="13"
                 />
               </div>
               <button type="submit" class="contacts__form-btn button">Передзвоніть</button>
             </form>
+          </div>
+        </div>
+        <div class="callback__container">
+          <div class="callback__list-wrapper">
+            <h3 class="callback__title">Дякуємо!</h3>
+            <p class="callback__text">Ми вже телефонуємо вам</p>
           </div>
         </div>
       </section>
@@ -251,5 +260,7 @@
         </ul>
       </nav>
     </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/contacts.js"></script>
   </body>
 </html>

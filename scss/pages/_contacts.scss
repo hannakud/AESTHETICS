@@ -63,7 +63,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
-    color: $color-main-font;
+    color: $color-light-font;
     background: transparent;
     padding: 10px 15px;
     height: 50px;
@@ -87,6 +87,20 @@
     &::after {
       content: '';
       border: 1px solid $color-light-font;
+    }
+  }
+
+  .callback__container {
+    display: none;
+  }
+
+  &.form-submitted {
+    .callback__container {
+      display: flex;
+    }
+
+    .contacts__container {
+      display: none;
     }
   }
 }

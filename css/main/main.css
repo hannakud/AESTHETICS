@@ -1838,17 +1838,14 @@ select {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 1060px;
-  background-image: url(../../assets/images/photos/new_img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .new__layout {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
-  z-index: 1;
   overflow: visible;
 }
 .new__info-container {
@@ -1874,6 +1871,31 @@ select {
   max-width: 623px;
   position: relative;
   left: 207px;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 32rem;
+}
+.slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider__dot.active {
+  background-color: #4b6049;
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1696px) {
@@ -1960,11 +1982,13 @@ select {
     left: 1vw;
     max-width: 400px;
   }
+  .slider__dots {
+    margin-top: 18rem;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .new {
     min-height: 240px;
-    background-image: url(../../assets/images/photos/new_mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1990,10 +2014,12 @@ select {
     left: 0;
     max-width: 200px;
   }
+  .slider__dots {
+    margin-top: 23rem;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .new {
-    background-image: url(../../assets/images/photos/new_mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2020,6 +2046,9 @@ select {
     line-height: 1.22;
     left: 1vw;
     max-width: 140px;
+  }
+  .slider__dots {
+    margin-top: 24rem;
   }
 }
 .mobile-menu {
@@ -2486,14 +2515,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   line-height: 1.17;
   font-family: "Poiret One", normal;
-  color: #484847;
+  color: #fffbf5;
 }
 .callback__text {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.18;
   font-family: "Poiret One", normal;
-  color: #484847;
+  color: #fffbf5;
 }
 
 /* catalog page */
@@ -2865,7 +2894,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  color: #484847;
+  color: #fffbf5;
   background: transparent;
   padding: 10px 15px;
   height: 50px;
@@ -2890,6 +2919,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .contacts__form-btn::after {
   content: "";
   border: 1px solid #fffbf5;
+}
+.contacts .callback__container {
+  display: none;
+}
+.contacts.form-submitted .callback__container {
+  display: flex;
+}
+.contacts.form-submitted .contacts__container {
+  display: none;
 }
 
 .delivery__container {
