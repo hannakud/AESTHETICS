@@ -1838,6 +1838,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1883,7 +1884,7 @@ select {
 .slider__dots {
   display: flex;
   justify-content: center;
-  margin-top: 32rem;
+  margin-top: 30rem;
 }
 .slider__dot {
   width: 10px;
