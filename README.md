@@ -1,1 +1,1 @@
-to srart project ---- npm i ---- npm start
+to srart project --- npm i --- npm start
