@@ -1,0 +1,354 @@
+/* catalog page */
+.catalog {
+  &__content {
+    display: flex;
+  }
+  &__layout {
+    padding-bottom: 110px;
+  }
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-sort-link {
+    color: $color-main-font;
+    @include font(20px, 400, 1.2);
+    border-bottom: 1px solid $color-main-font;
+    position: relative;
+    margin-bottom: 23px;
+    &::after {
+      content: '';
+      background-image: url(../assets/images/icon/expand.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 11px;
+      height: 6px;
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: -12px;
+    }
+  }
+  &__content-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__list-item {
+    transition: border, box-shadow 250ms $transition;
+    &:hover,
+    &:focus {
+      border: 1px solid $color-black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 47px;
+    min-width: 226px;
+  }
+  &__filtered-item {
+    display: flex;
+    &:first-child {
+      padding: 17px 0 0 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &__filter-item-title {
+    color: $color-main-font;
+    @include font(26px, 600, 1.23);
+    position: relative;
+  }
+  &__checkbox {
+    appearance: none;
+    margin: 0;
+    &:checked + .catalog__custom-icon {
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $color-accent;
+        left: 4px;
+        top: 4px;
+      }
+    }
+  }
+  &__custom-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-main-font;
+    display: inline-flex;
+  }
+  &__filtered-label {
+    display: flex;
+  }
+  &__filtered-span {
+    margin-left: 5px;
+    @include font(20px, 400, 1.2);
+  }
+  &__filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__filter-input-item {
+    max-width: 90px;
+    height: 45px;
+    &::placeholder {
+      @include font(20px, 400, 1.2);
+      color: rgba(72, 72, 71, 0.5);
+      outline: none;
+      &:active {
+        color: rgba(72, 72, 71, 0.5);
+      }
+    }
+  }
+  &__filter-input-wrapper {
+    @include flex-list(8px);
+    margin: 7px 0 0 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
+    padding: 2px;
+    margin-bottom: 43px;
+  }
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: left;
+    width: calc((100% - 60px) / 3);
+    position: relative;
+    padding: 13px 13px 9px 13px;
+  }
+  &__link-fav {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    background-image: url(../assets/images/icon/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    transition: background-image 250ms $transition;
+    &:hover {
+      background-image: url(../assets/images/icon/heart_hover_favorite.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    &:active {
+      background-image: url(../assets/images/icon/heart_hover_favorite.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+  &__name-link {
+    @include font(20px, 400, 1.5);
+    color: $color-main-font;
+    min-height: 60px;
+    display: block;
+  }
+  &__span {
+    @include font(20px, 400, 1.5);
+    display: block;
+    text-align: end;
+    color: $color-main-font;
+  }
+  &__link-container {
+    @include flex-list(52px);
+    justify-content: space-between;
+  }
+  &__link-more {
+    @include font(14px, 400, 1.25);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $color-main-font;
+  }
+  &__button-container {
+    margin: 0 auto;
+  }
+  &__title {
+    @include font(40px, 600, 1.23);
+    color: $color-main-font;
+    margin-bottom: 43px;
+  }
+}
+
+@include from1024to1279 {
+  .catalog {
+    &__list {
+      gap: 20px;
+    }
+    &__list-item {
+      width: calc((90% - 40px) / 3);
+    }
+  }
+}
+
+@include from768to1023 {
+  .layout {
+    width: 768px;
+  }
+  .catalog {
+    &__list {
+      white-space: nowrap;
+      text-align: center;
+    }
+    &__list-item {
+      width: 40%;
+    }
+    &__name-link {
+      @include font(18px, 400, 1.2);
+      white-space: pre-wrap;
+    }
+  }
+}
+
+@include from480to767 {
+  .layout {
+    width: 480px;
+  }
+  .catalog {
+    &__list {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__list-item {
+      width: 100%;
+    }
+    &__name-link {
+      @include font(17px, 400, 1.2);
+      white-space: pre-wrap;
+    }
+  }
+}
+
+@include from320to479 {
+  .layout {
+    width: 320px;
+  }
+  .catalog {
+    &__list {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__name-link {
+      @include font(18px, 400, 1.2);
+      white-space: pre-wrap;
+    }
+    &__list-item {
+      width: 100%;
+    }
+  }
+}
+
+/* viewed */
+
+.viewed {
+  &_layout {
+    padding-bottom: 87px;
+    overflow: visible;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 11px;
+    &--recommended {
+      gap: 70px;
+      padding: 0 77px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.23;
+    color: $color-main-font;
+    margin-bottom: 43px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 260px;
+    height: 400px;
+    position: relative;
+    padding: 13px 13px 9px 13px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    transition: border, box-shadow 250ms $transition;
+    &:hover,
+    &:focus {
+      border: 1px solid $color-black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:hover .viewed__link-container,
+    &:focus .viewed__link-container {
+      opacity: 1;
+    }
+    &:hover .viewed__link-fav {
+      position: absolute;
+      right: 11px;
+      top: 11px;
+      background-image: url(../assets/images/icon/heart.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__span {
+    display: block;
+    text-align: end;
+    color: $color-main-font;
+    @include font(20px, 400, 1.5);
+  }
+  &__link-container {
+    @include flex-list(52px);
+    justify-content: space-between;
+    transition: opacity 250ms $transition;
+  }
+  &__link-more {
+    @include font(14px, 400, 1.25);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $color-main-font;
+  }
+  &__name-link {
+    @include font(20px, 400, 1.5);
+    display: block;
+    min-height: 60px;
+    color: $color-main-font;
+  }
+  &__link-container {
+    opacity: 0;
+  }
+  &__link-fav {
+    transition: all 250ms $transition;
+  }
+}

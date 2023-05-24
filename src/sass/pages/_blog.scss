@@ -1,0 +1,128 @@
+.blog {
+  &__arrow-back {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 68px;
+  }
+  &__title {
+    color: $color-black;
+    @include font(40px, 600, 1.23);
+  }
+  &__description {
+    display: flex;
+    gap: 22px;
+  }
+  &__img {
+    width: 500px;
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &--up {
+      padding-top: 40px;
+    }
+  }
+  &__text {
+    @include font(20px, 400, 1.2);
+  }
+  &__description {
+    &--margin {
+      margin-top: 42px;
+    }
+  }
+}
+
+@include from1360to1696 {
+  .blog {
+    &__img {
+      width: 80%;
+    }
+  }
+}
+
+@include from1024to1279 {
+  .layout {
+    width: 1024px;
+  }
+  .blog {
+    &__text {
+      @include font(18px, 400, 1);
+      width: 80%;
+    }
+  }
+}
+
+@include from768to1023 {
+  .layout {
+    width: 768px;
+  }
+  .blog {
+    &__img {
+      width: 60%;
+      height: 60%;
+    }
+    &__text {
+      @include font(17px, 400, 1);
+    }
+  }
+}
+
+@include from480to767 {
+  .layout {
+    width: 480px;
+  }
+  .blog {
+    &__description {
+      flex-direction: column;
+    }
+    &__text-container {
+      &--up {
+        padding-top: 0px;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 60%;
+    }
+    &__title {
+      @include font(28px, 600, 1.23);
+    }
+    &__text {
+      @include font(18px, 400, 1);
+    }
+  }
+}
+
+@include from320to479 {
+  .layout {
+    width: 320px;
+  }
+  .blog {
+    &__description {
+      flex-direction: column;
+    }
+    &__text-container {
+      &--up {
+        padding-top: 0px;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 60%;
+    }
+    &__title {
+      @include font(28px, 600, 1.23);
+    }
+    &__text {
+      @include font(18px, 400, 1);
+    }
+  }
+}

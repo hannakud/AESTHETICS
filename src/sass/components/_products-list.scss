@@ -1,0 +1,79 @@
+/* cabinet__tab-content--active */
+.products-list {
+  display: flex;
+  padding: 0 48px 0 0;
+  overflow-y: auto;
+  flex-direction: column;
+
+  &__item {
+    padding: 9px 0;
+    width: 100%;
+    border-bottom: 1px solid $color-accent;
+    display: flex;
+    height: 98px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-right: 18px;
+  }
+  &__item-info {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 161px;
+  }
+  &__rate {
+    width: 100px;
+  }
+  &__amount {
+    @include font(18px, 400, 1.5);
+  }
+  &__title {
+    @include font(20px, 600, 1.2);
+    width: 260px;
+    margin-right: 20px;
+    color: $color-main-font;
+  }
+  &__price {
+    @include font(20px, 600, 1.2);
+    width: 120px;
+    margin-right: 28px;
+  }
+  &__action {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__remove-btn {
+    @include font(18px, 400, 1.5);
+    color: $color-main-font;
+    text-decoration: underline;
+  }
+
+  &__remove-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color-accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/icon/cross.svg) center no-repeat;
+    transition: all 250ms $transition;
+    &:hover {
+      color: $color-black;
+      background: url(../assets/images/icon/cross-black.svg) center no-repeat;
+    }
+  }
+
+  &__amount {
+    width: 86px;
+  }
+}
